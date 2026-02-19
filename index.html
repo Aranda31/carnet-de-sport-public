@@ -1,0 +1,3911 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Carnet de Sport">
+    <meta name="application-name" content="Carnet de Sport">
+    <meta name="theme-color" content="#141414">
+    <meta name="description" content="Suivez vos entraînements de musculation avec style">
+    <title>Carnet de Sport</title>
+    
+    <!-- App Icons - Sporty Red Style -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23ff3d3d'/%3E%3Cstop offset='100%25' stop-color='%23ff7b00'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='120' height='120' rx='26' fill='url(%23bg)'/%3E%3Cg transform='translate(60,60)'%3E%3Cpath d='M-20,-25 L-20,25 Q-20,28 -17,28 L17,28 Q20,28 20,25 L20,-25 Q20,-28 17,-28 L-17,-28 Q-20,-28 -20,-25 Z' fill='white' opacity='0.95'/%3E%3Cline x1='0' y1='-28' x2='0' y2='28' stroke='white' stroke-width='1.5' opacity='0.35'/%3E%3Cline x1='-12' y1='-15' x2='-5' y2='-15' stroke='white' stroke-width='1.8' stroke-linecap='round' opacity='0.8'/%3E%3Cline x1='-12' y1='-7' x2='-4' y2='-7' stroke='white' stroke-width='1.8' stroke-linecap='round' opacity='0.65'/%3E%3Cline x1='-12' y1='1' x2='-7' y2='1' stroke='white' stroke-width='1.8' stroke-linecap='round' opacity='0.5'/%3E%3Cline x1='-12' y1='9' x2='-5' y2='9' stroke='white' stroke-width='1.8' stroke-linecap='round' opacity='0.65'/%3E%3Cline x1='-12' y1='17' x2='-7' y2='17' stroke='white' stroke-width='1.8' stroke-linecap='round' opacity='0.5'/%3E%3Cline x1='5' y1='-15' x2='12' y2='-15' stroke='white' stroke-width='1.8' stroke-linecap='round' opacity='0.8'/%3E%3Cline x1='4' y1='-7' x2='12' y2='-7' stroke='white' stroke-width='1.8' stroke-linecap='round' opacity='0.65'/%3E%3Cline x1='7' y1='1' x2='12' y2='1' stroke='white' stroke-width='1.8' stroke-linecap='round' opacity='0.5'/%3E%3Cline x1='5' y1='9' x2='12' y2='9' stroke='white' stroke-width='1.8' stroke-linecap='round' opacity='0.65'/%3E%3Cline x1='7' y1='17' x2='12' y2='17' stroke='white' stroke-width='1.8' stroke-linecap='round' opacity='0.5'/%3E%3C/g%3E%3C/svg%3E">
+
+    <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Cdefs%3E%3ClinearGradient id='bg2' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23ff3d3d'/%3E%3Cstop offset='100%25' stop-color='%23ff7b00'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='180' height='180' rx='40' fill='url(%23bg2)'/%3E%3Cg transform='translate(90,90)'%3E%3Cpath d='M-30,-38 L-30,38 Q-30,42 -26,42 L26,42 Q30,42 30,38 L30,-38 Q30,-42 26,-42 L-26,-42 Q-30,-42 -30,-38 Z' fill='white' opacity='0.95'/%3E%3Cline x1='0' y1='-42' x2='0' y2='42' stroke='white' stroke-width='2' opacity='0.35'/%3E%3Cline x1='-18' y1='-23' x2='-8' y2='-23' stroke='white' stroke-width='2.5' stroke-linecap='round' opacity='0.85'/%3E%3Cline x1='-18' y1='-11' x2='-6' y2='-11' stroke='white' stroke-width='2.5' stroke-linecap='round' opacity='0.7'/%3E%3Cline x1='-18' y1='1' x2='-10' y2='1' stroke='white' stroke-width='2.5' stroke-linecap='round' opacity='0.55'/%3E%3Cline x1='-18' y1='13' x2='-8' y2='13' stroke='white' stroke-width='2.5' stroke-linecap='round' opacity='0.7'/%3E%3Cline x1='-18' y1='25' x2='-10' y2='25' stroke='white' stroke-width='2.5' stroke-linecap='round' opacity='0.55'/%3E%3Cline x1='8' y1='-23' x2='18' y2='-23' stroke='white' stroke-width='2.5' stroke-linecap='round' opacity='0.85'/%3E%3Cline x1='6' y1='-11' x2='18' y2='-11' stroke='white' stroke-width='2.5' stroke-linecap='round' opacity='0.7'/%3E%3Cline x1='10' y1='1' x2='18' y2='1' stroke='white' stroke-width='2.5' stroke-linecap='round' opacity='0.55'/%3E%3Cline x1='8' y1='13' x2='18' y2='13' stroke='white' stroke-width='2.5' stroke-linecap='round' opacity='0.7'/%3E%3Cline x1='10' y1='25' x2='18' y2='25' stroke='white' stroke-width='2.5' stroke-linecap='round' opacity='0.55'/%3E%3C/g%3E%3C/svg%3E">
+    
+    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIkNhcm5ldCBkZSBTcG9ydCIsCiAgInNob3J0X25hbWUiOiAiQ2FybmV0IGRlIFNwb3J0IiwKICAic3RhcnRfdXJsIjogIi4iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMxNDE0MTQiLAogICJ0aGVtZV9jb2xvciI6ICIjZmYzZDNkIiwKICAiZGVzY3JpcHRpb24iOiAiU3VpdmV6IHZvcyBlbnRyYcOubmVtZW50cyBkZSBtdXNjdWxhdGlvbiBhdmVjIHN0eWxlIgp9">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        :root {
+            /* Sporty Dark Theme */
+            --bg-primary: #141414;
+            --bg-secondary: #1f1f1f;
+            --bg-tertiary: #2a2a2a;
+            --bg-elevated: #333333;
+            
+            --text-primary: #ffffff;
+            --text-secondary: #888888;
+            --text-tertiary: #555555;
+            
+            /* Sporty Accent Colors */
+            --accent: #ff3d3d;
+            --accent-dark: #cc0000;
+            --accent-glow: rgba(255, 61, 61, 0.3);
+            --accent-orange: #ff7b00;
+            --accent-gradient: linear-gradient(135deg, #ff3d3d, #ff7b00);
+            
+            /* Session Colors */
+            --session-violet: #8b5cf6;
+            --session-green: #059669;
+            --session-azure: #0ea5e9;
+            
+            /* Shadows */
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.6);
+            --shadow-red: 0 4px 20px rgba(255, 61, 61, 0.4);
+        }
+
+        /* Light Theme - renforcé */
+        body.theme-light {
+            --bg-primary: #e8e8ed;
+            --bg-secondary: #ffffff;
+            --bg-tertiary: #d4d4da;
+            --bg-elevated: #c7c7cc;
+            --text-primary: #1c1c1e;
+            --text-secondary: #48484a;
+            --text-tertiary: #8e8e93;
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.14);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.18);
+            --shadow-red: 0 4px 20px rgba(255, 61, 61, 0.3);
+        }
+        body.theme-light .nav-bar {
+            background: rgba(232, 232, 237, 0.94);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        body.theme-light .menu-page {
+            background: var(--bg-primary);
+        }
+        body.theme-light .menu-page::before {
+            background: radial-gradient(circle, rgba(255, 61, 61, 0.08) 0%, transparent 70%);
+        }
+        body.theme-light .menu-title {
+            background: linear-gradient(135deg, #1c1c1e, #48484a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        body.theme-light .menu-subtitle {
+            color: #48484a;
+        }
+        body.theme-light .menu-button {
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+        body.theme-light .exercise-card,
+        body.theme-light .series-card,
+        body.theme-light .exercise-detail-card {
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+        body.theme-light .series-card {
+            background: var(--bg-tertiary);
+        }
+        body.theme-light .field-input,
+        body.theme-light .field-select {
+            color: #1c1c1e;
+            border: 1px solid rgba(0, 0, 0, 0.12);
+        }
+        body.theme-light .action-btn {
+            /* force gradient visible sur fond clair */
+            box-shadow: 0 4px 20px rgba(255, 61, 61, 0.4);
+        }
+        body.theme-light .bottom-action-btn {
+            background: var(--bg-primary);
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        body.theme-light .modal {
+            background: #ffffff;
+        }
+        body.theme-light .modal-overlay {
+            background: rgba(0, 0, 0, 0.3);
+        }
+        body.theme-light .celebration-overlay {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        body.theme-light .chrono-container {
+            border-color: rgba(255, 61, 61, 0.2);
+        }
+        body.theme-light .theme-toggle {
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Theme Switcher - minimal */
+        .theme-switcher {
+            display: flex;
+            justify-content: center;
+            padding: 12px 24px 44px;
+        }
+        .theme-toggle {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            background: var(--bg-secondary);
+            border-radius: 50px;
+            padding: 4px;
+            border: 1px solid rgba(255,255,255,0.06);
+            box-shadow: var(--shadow-sm);
+        }
+        body.theme-light .theme-toggle {
+            border-color: rgba(0,0,0,0.08);
+        }
+        .theme-toggle-btn {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: none;
+            background: transparent;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+            color: var(--text-tertiary);
+        }
+        .theme-toggle-btn.active {
+            background: var(--accent-gradient);
+            box-shadow: var(--shadow-red);
+        }
+        .theme-toggle-btn:active { transform: scale(0.9); }
+        
+        @supports (font: -apple-system-body) {
+            body {
+                font: -apple-system-body;
+            }
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .app-container {
+            max-width: 428px;
+            margin: 0 auto;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        /* Navigation Bar - Sporty Style */
+        .nav-bar {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: rgba(20, 20, 20, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 61, 61, 0.2);
+        }
+        
+        .nav-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 20px;
+            min-height: 52px;
+        }
+        
+        .nav-back {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: none;
+            border: none;
+            color: var(--accent);
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 4px 0;
+        }
+        
+        .nav-back::before {
+            content: '‹';
+            font-size: 34px;
+            font-weight: 300;
+            line-height: 1;
+        }
+        
+        .nav-title {
+            font-size: 17px;
+            font-weight: 700;
+            letter-spacing: -0.4px;
+            text-transform: uppercase;
+        }
+        
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        .nav-button {
+            background: none;
+            border: none;
+            color: var(--accent);
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 4px 0;
+        }
+        
+        .nav-icon-btn {
+            font-size: 22px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 4px;
+        }
+        
+        .nav-date {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+        
+        /* Menu Page */
+        .menu-page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            background: var(--bg-primary);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .menu-page::before {
+            content: '';
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255, 61, 61, 0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        
+        .menu-header {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 40px 40px;
+            text-align: center;
+        }
+        
+        .menu-logo {
+            width: 100px;
+            height: 100px;
+            background: var(--accent-gradient);
+            border-radius: 28px;
+            margin-bottom: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-red);
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 4px 20px rgba(255, 61, 61, 0.4); transform: scale(1); }
+            50% { box-shadow: 0 8px 40px rgba(255, 61, 61, 0.7); transform: scale(1.03); }
+        }
+        
+        .menu-logo svg {
+            width: 60px;
+            height: 60px;
+        }
+        
+        .menu-title {
+            font-size: 40px;
+            font-weight: 900;
+            letter-spacing: -1.5px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, #ffffff 0%, #888888 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .menu-subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        
+        .menu-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 0 20px 24px;
+        }
+        
+        .menu-stat-card {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 14px 10px;
+            text-align: center;
+            border: 1px solid rgba(255, 61, 61, 0.15);
+        }
+        
+        .menu-stat-value {
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 4px;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .menu-stat-label {
+            font-size: 10px;
+            color: var(--text-secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .menu-actions {
+            padding: 16px 20px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .menu-button {
+            width: 100%;
+            padding: 20px;
+            background: var(--bg-secondary);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+            color: var(--text-primary);
+            font-size: 17px;
+            font-weight: 700;
+            text-align: left;
+            cursor: pointer;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .menu-button::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: var(--accent-gradient);
+            opacity: 0;
+            transition: opacity 0.25s;
+        }
+        
+        .menu-button:active {
+            transform: scale(0.97);
+            background: var(--bg-tertiary);
+        }
+        
+        .menu-button:active::after {
+            opacity: 1;
+        }
+        
+        .menu-button-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--accent-gradient);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(255, 61, 61, 0.3);
+        }
+        
+        .menu-button-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+        
+        .menu-button-title {
+            font-size: 17px;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+        }
+        
+        .menu-button-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+        
+        .menu-button-icon-text {
+            width: 48px;
+            height: 48px;
+            background: var(--accent-gradient);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11px;
+            font-weight: 900;
+            letter-spacing: 0.5px;
+            color: white;
+            flex-shrink: 0;
+            box-shadow: 0 4px 12px rgba(255, 61, 61, 0.3);
+        }
+        
+        .menu-button-centered {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 22px 20px;
+            gap: 6px;
+        }
+        
+        .menu-button-centered .menu-button-title {
+            font-size: 19px;
+        }
+        
+        .menu-button-settings {
+            background: transparent;
+            border: 1px solid rgba(255, 61, 61, 0.25);
+        }
+        
+        .menu-button-settings .menu-button-title {
+            color: var(--accent);
+            font-size: 15px !important;
+        }
+        
+        /* Chronomètre */
+        .chrono-container {
+            margin: 0 20px 16px;
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 16px 20px;
+            border: 1px solid rgba(255, 61, 61, 0.15);
+        }
+        
+        .chrono-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 12px;
+        }
+        
+        .chrono-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .chrono-display {
+            font-size: 44px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            text-align: center;
+            margin-bottom: 16px;
+            font-variant-numeric: tabular-nums;
+        }
+        
+        .chrono-display.running {
+            color: var(--accent);
+        }
+        
+        .chrono-buttons {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+        
+        .chrono-btn {
+            padding: 12px 8px;
+            border: none;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .chrono-btn-start {
+            background: var(--accent-gradient);
+            color: white;
+            box-shadow: 0 4px 12px rgba(255, 61, 61, 0.3);
+        }
+        
+        .chrono-btn-pause {
+            background: rgba(255, 123, 0, 0.2);
+            color: var(--accent-orange);
+        }
+        
+        .chrono-btn-reset {
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+        }
+        
+        .chrono-btn-lap {
+            background: rgba(255, 61, 61, 0.1);
+            color: var(--accent);
+        }
+        
+        .chrono-laps {
+            margin-top: 12px;
+            max-height: 100px;
+            overflow-y: auto;
+        }
+        
+        .chrono-lap-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+        
+        .chrono-lap-item span:last-child {
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        
+        /* Session Type Selector - iOS Style */
+        .session-type-section {
+            padding: 20px;
+        }
+        
+        .section-header {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--accent);
+            margin-bottom: 12px;
+            padding: 0 4px;
+        }
+        
+        .session-type-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        
+        .session-type-card {
+            aspect-ratio: 1;
+            background: var(--bg-secondary);
+            border: 2px solid rgba(255, 255, 255, 0.06);
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .session-type-card:active {
+            transform: scale(0.95);
+        }
+        
+        .session-type-card.selected {
+            border-color: currentColor;
+            box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
+        }
+        
+        .session-type-card.s1 { color: var(--session-violet); }
+        .session-type-card.s2 { color: var(--session-green); }
+        .session-type-card.s3 { color: var(--session-azure); }
+        
+        .session-type-label {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: -0.5px;
+            width: 100%;
+            text-align: center;
+            padding: 0 8px;
+            word-break: break-word;
+            hyphens: auto;
+            line-height: 1.1;
+        }
+        
+        /* Exercise Cards - iOS Style */
+        .exercises-list {
+            padding: 0 20px 120px;
+        }
+        
+        .exercise-card {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .exercise-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+        }
+        
+        .exercise-info {
+            flex: 1;
+        }
+        
+        .exercise-number {
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 500;
+            margin-bottom: 2px;
+        }
+        
+        .exercise-name {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.4px;
+            margin-bottom: 4px;
+        }
+        
+        .exercise-rest {
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+        
+        .delete-btn {
+            width: 28px;
+            height: 28px;
+            background: var(--bg-tertiary);
+            border: none;
+            border-radius: 14px;
+            color: #ff6b6b;
+            font-size: 18px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .series-container {
+            margin-top: 12px;
+        }
+        
+        .series-card {
+            background: var(--bg-tertiary);
+            border-radius: 12px;
+            padding: 14px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            transition: background 0.2s;
+            border: 1px solid transparent;
+        }
+        
+        .series-card:active {
+            background: var(--bg-elevated);
+        }
+        
+        .series-card.completed {
+            border-color: rgba(139, 92, 246, 0.3);
+        }
+        
+        .series-indicators {
+            display: flex;
+            gap: 6px;
+            margin-top: 10px;
+            justify-content: flex-end;
+        }
+        
+        .indicator-btn {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            border: 1.5px solid rgba(255, 255, 255, 0.15);
+            background: var(--bg-secondary);
+            color: var(--text-secondary);
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+        
+        .indicator-btn:active {
+            transform: scale(0.9);
+        }
+        
+        .indicator-btn.active {
+            background: var(--accent-gradient);
+            color: white;
+            border-color: var(--accent);
+            box-shadow: 0 2px 8px rgba(255, 61, 61, 0.3);
+        }
+        
+        .series-header {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: -0.08px;
+        }
+        
+        .series-data {
+            font-size: 17px;
+            font-weight: 600;
+            letter-spacing: -0.4px;
+        }
+        
+        .series-comment {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-top: 6px;
+            font-style: italic;
+        }
+        
+        .add-series-btn {
+            width: 100%;
+            padding: 12px;
+            background: none;
+            border: 1.5px dashed rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            color: var(--ios-blue);
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        
+        /* Add Exercise Button */
+        .add-exercise-btn {
+            width: calc(100% - 40px);
+            margin: 0 20px 20px;
+            padding: 16px;
+            background: rgba(255, 61, 61, 0.1);
+            border: 1.5px dashed rgba(255, 61, 61, 0.4);
+            border-radius: 14px;
+            color: var(--accent);
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Comment Section */
+        .comment-section {
+            padding: 0 20px 20px;
+        }
+        
+        .comment-label {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: -0.08px;
+        }
+        
+        .comment-input {
+            width: 100%;
+            padding: 14px;
+            background: var(--bg-secondary);
+            border: none;
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-size: 15px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            resize: vertical;
+            min-height: 88px;
+        }
+        
+        .comment-input::placeholder {
+            color: var(--text-tertiary);
+        }
+        
+        /* Bottom Action Button */
+        .bottom-action-btn {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            max-width: 428px;
+            margin: 0 auto;
+            padding: 12px 20px 32px;
+            background: linear-gradient(to top, rgba(26, 26, 28, 1) 70%, transparent);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        
+        .action-btn {
+            width: 100%;
+            padding: 18px;
+            background: var(--accent-gradient);
+            border: none;
+            border-radius: 14px;
+            color: #ffffff;
+            font-size: 17px;
+            font-weight: 800;
+            cursor: pointer;
+            box-shadow: var(--shadow-red);
+            transition: all 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .action-btn:active {
+            transform: scale(0.98);
+            opacity: 0.85;
+        }
+        
+        .action-btn.success {
+            background: var(--session-violet);
+        }
+        
+        /* Calendar - iOS Style */
+        .calendar-section {
+            padding: 20px;
+        }
+        
+        .calendar-header {
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .calendar-month-title {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: -0.4px;
+            text-transform: capitalize;
+        }
+        
+        .month-nav-btn {
+            width: 36px;
+            height: 36px;
+            background: var(--bg-secondary);
+            border: 1px solid rgba(255, 61, 61, 0.2);
+            border-radius: 10px;
+            color: var(--accent);
+            font-size: 20px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+        }
+        
+        .calendar-weekdays {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 4px;
+            margin-bottom: 8px;
+        }
+        
+        .weekday-label {
+            text-align: center;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            padding: 8px 0;
+            text-transform: uppercase;
+            letter-spacing: -0.08px;
+        }
+        
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 4px;
+            margin-bottom: 24px;
+        }
+        
+        .calendar-day {
+            aspect-ratio: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+            font-size: 17px;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+        
+        .calendar-day:active {
+            background: var(--bg-tertiary);
+        }
+        
+        .calendar-day.other-month {
+            color: var(--text-tertiary);
+            opacity: 0.4;
+        }
+        
+        .calendar-day.today {
+            background: var(--bg-secondary);
+            font-weight: 600;
+        }
+        
+        .calendar-day.has-workout {
+            position: relative;
+        }
+        
+        .calendar-dot {
+            position: absolute;
+            bottom: 4px;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+        }
+        
+        /* Selected Date Card */
+        .selected-date-card {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .selected-date-title {
+            font-size: 17px;
+            font-weight: 600;
+            letter-spacing: -0.4px;
+            margin-bottom: 12px;
+            text-transform: capitalize;
+        }
+        
+        .no-workout-msg {
+            color: var(--text-secondary);
+            font-size: 15px;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .workout-preview {
+            cursor: pointer;
+        }
+        
+        .workout-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            margin-bottom: 8px;
+            border: 1px solid transparent;
+        }
+        
+        .workout-summary {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+        
+        /* Workout Detail */
+        .workout-detail {
+            padding: 20px;
+        }
+        
+        .workout-detail-header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        
+        .exercise-detail-card {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 16px;
+            margin-bottom: 12px;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .series-detail-item {
+            background: var(--bg-tertiary);
+            border-radius: 10px;
+            padding: 12px;
+            margin-bottom: 6px;
+        }
+        
+        .series-detail-data {
+            font-weight: 600;
+            font-size: 15px;
+            margin-bottom: 4px;
+        }
+        
+        /* Modal - iOS Style */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            z-index: 1000;
+            animation: fadeIn 0.3s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+        
+        .modal {
+            background: var(--bg-secondary);
+            border-radius: 20px 20px 0 0;
+            padding: 0;
+            max-width: 428px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            animation: slideUp 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .modal-handle {
+            width: 36px;
+            height: 5px;
+            background: var(--text-tertiary);
+            border-radius: 3px;
+            margin: 12px auto 8px;
+        }
+        
+        .modal-header {
+            padding: 12px 20px;
+            border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .modal-title {
+            font-size: 17px;
+            font-weight: 600;
+            letter-spacing: -0.4px;
+        }
+        
+        .modal-close-btn {
+            background: none;
+            border: none;
+            color: var(--accent);
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        .modal-body {
+            padding: 20px;
+        }
+        
+        .form-field {
+            margin-bottom: 20px;
+        }
+        
+        .field-label {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .field-input,
+        .field-select {
+            width: 100%;
+            padding: 14px;
+            background: var(--bg-tertiary);
+            border: 1px solid rgba(255, 61, 61, 0.2);
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-size: 17px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 600;
+        }
+        
+        .field-input::placeholder {
+            color: var(--text-tertiary);
+            font-weight: 400;
+        }
+        
+        .new-exercise-option {
+            padding: 14px;
+            background: rgba(255, 61, 61, 0.08);
+            border: 1.5px dashed rgba(255, 61, 61, 0.3);
+            border-radius: 12px;
+            margin-top: 12px;
+            cursor: pointer;
+            text-align: center;
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .modal-actions {
+            padding: 16px 20px 32px;
+        }
+        
+        .modal-btn {
+            width: 100%;
+            padding: 16px;
+            border: none;
+            border-radius: 14px;
+            font-size: 17px;
+            font-weight: 800;
+            cursor: pointer;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .modal-btn-primary {
+            background: var(--accent-gradient);
+            color: #ffffff;
+            box-shadow: var(--shadow-red);
+        }
+        
+        .modal-btn-secondary {
+            background: var(--bg-tertiary);
+            color: var(--text-secondary);
+        }
+        
+        /* Utility */
+        .hidden {
+            display: none !important;
+        }
+        
+        /* Celebration Animation */
+        .celebration-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.9);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+            animation: fadeIn 0.3s;
+            cursor: pointer;
+        }
+        
+        .celebration-content {
+            text-align: center;
+            animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        .celebration-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+            animation: rotateScale 0.8s ease-out;
+        }
+        
+        .celebration-title {
+            font-size: 32px;
+            font-weight: 700;
+            color: #10b981;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+        
+        .celebration-message {
+            font-size: 17px;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+        }
+        
+        .celebration-stats {
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 32px;
+            min-width: 280px;
+        }
+        
+        .celebration-stat {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            font-size: 15px;
+        }
+        
+        .celebration-stat-label {
+            color: var(--text-secondary);
+        }
+        
+        .celebration-stat-value {
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            animation: confettiFall 3s ease-out forwards;
+        }
+        
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0) translateY(100px);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.1) translateY(-10px);
+            }
+            100% {
+                transform: scale(1) translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes rotateScale {
+            0% {
+                transform: scale(0) rotate(0deg);
+            }
+            50% {
+                transform: scale(1.2) rotate(180deg);
+            }
+            100% {
+                transform: scale(1) rotate(360deg);
+            }
+        }
+        
+        @keyframes confettiFall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container" id="app"></div>
+
+    <script>
+        (function() {
+            const theme = localStorage.getItem('theme') || 'dark';
+            if (theme === 'light') document.body.classList.add('theme-light');
+        })();
+    </script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+
+        // Storage utilities
+        const Storage = {
+            initializeData: () => {
+                // Check if data has already been initialized
+                const initialized = localStorage.getItem('dataInitialized');
+                if (initialized) return;
+
+                // App démarre vide - aucune donnée pré-chargée
+                const historicalWorkouts = [];
+
+                // Save historical workouts
+                localStorage.setItem('workouts', JSON.stringify(historicalWorkouts));
+
+                // Extract and save all unique exercise names
+                const exerciseNames = new Set();
+                historicalWorkouts.forEach(w => {
+                    w.exercises.forEach(e => exerciseNames.add(e.name));
+                });
+                localStorage.setItem('exerciseNames', JSON.stringify([...exerciseNames]));
+
+                // Initialize session types with correct colors
+                const sessionTypes = [
+                    { id: 's1', name: 'S1', color: '#8b5cf6' },
+                    { id: 's2', name: 'S2', color: '#059669' },
+                    { id: 's3', name: 'S3', color: '#0ea5e9' }
+                ];
+                localStorage.setItem('sessionTypes', JSON.stringify(sessionTypes));
+
+                // Mark as initialized
+                localStorage.setItem('dataInitialized', 'true');
+            },
+            getWorkouts: () => {
+                try {
+                    const data = localStorage.getItem('workouts');
+                    return data ? JSON.parse(data) : [];
+                } catch (e) {
+                    console.error('Error loading workouts:', e);
+                    return [];
+                }
+            },
+            saveWorkouts: (workouts) => {
+                try {
+                    localStorage.setItem('workouts', JSON.stringify(workouts));
+                } catch (e) {
+                    console.error('Error saving workouts:', e);
+                }
+            },
+            getExerciseNames: () => {
+                try {
+                    const data = localStorage.getItem('exerciseNames');
+                    return data ? JSON.parse(data) : [];
+                } catch (e) {
+                    console.error('Error loading exercise names:', e);
+                    return [];
+                }
+            },
+            addExerciseName: (name) => {
+                try {
+                    const names = Storage.getExerciseNames();
+                    if (!names.includes(name)) {
+                        names.push(name);
+                        localStorage.setItem('exerciseNames', JSON.stringify(names));
+                    }
+                } catch (e) {
+                    console.error('Error adding exercise name:', e);
+                }
+            },
+            getDraftSession: () => {
+                try {
+                    const data = localStorage.getItem('draftSession');
+                    return data ? JSON.parse(data) : null;
+                } catch (e) {
+                    console.error('Error loading draft session:', e);
+                    return null;
+                }
+            },
+            saveDraftSession: (session) => {
+                try {
+                    localStorage.setItem('draftSession', JSON.stringify(session));
+                } catch (e) {
+                    console.error('Error saving draft session:', e);
+                }
+            },
+            clearDraftSession: () => {
+                try {
+                    localStorage.removeItem('draftSession');
+                } catch (e) {
+                    console.error('Error clearing draft session:', e);
+                }
+            },
+            getSessionTypes: () => {
+                try {
+                    const data = localStorage.getItem('sessionTypes');
+                    return data ? JSON.parse(data) : [
+                        { id: 's1', name: 'S1', color: '#8b5cf6' },
+                        { id: 's2', name: 'S2', color: '#059669' },
+                        { id: 's3', name: 'S3', color: '#0ea5e9' }
+                    ];
+                } catch (e) {
+                    return [
+                        { id: 's1', name: 'S1', color: '#8b5cf6' },
+                        { id: 's2', name: 'S2', color: '#059669' },
+                        { id: 's3', name: 'S3', color: '#0ea5e9' }
+                    ];
+                }
+            },
+            saveSessionTypes: (types) => {
+                try {
+                    localStorage.setItem('sessionTypes', JSON.stringify(types));
+                } catch (e) {
+                    console.error('Error saving session types:', e);
+                }
+            }
+        };
+
+        // Color utilities - generate visually distinct colors
+        const ALL_COLORS = [
+            '#ef4444', '#f97316', '#eab308', '#22c55e', '#14b8a6',
+            '#3b82f6', '#8b5cf6', '#ec4899', '#06b6d4', '#84cc16',
+            '#f43f5e', '#fb923c', '#a3e635', '#34d399', '#60a5fa',
+            '#c084fc', '#f472b6', '#38bdf8', '#4ade80', '#facc15'
+        ];
+
+        const getDistinctColor = (existingColors) => {
+            // Find colors not yet used
+            const available = ALL_COLORS.filter(c => !existingColors.includes(c));
+            if (available.length > 0) {
+                return available[Math.floor(Math.random() * available.length)];
+            }
+            // If all used, pick one that's most visually different from recent ones
+            return ALL_COLORS[Math.floor(Math.random() * ALL_COLORS.length)];
+        };
+
+        // Helper: resolve session type name+color from ID
+        const resolveSessionType = (typeId) => {
+            const types = Storage.getSessionTypes();
+            const found = types.find(t => t.id === typeId);
+            return found || { id: typeId, name: typeId ? typeId.toUpperCase() : '?', color: '#888888' };
+        };
+
+        // Helper: dynamic font size for session type name
+        const sessionTypeFontSize = (name) => {
+            const len = name.length;
+            if (len <= 2)  return '28px';
+            if (len <= 4)  return '22px';
+            if (len <= 8)  return '16px';
+            if (len <= 14) return '12px';
+            return '10px';
+        };
+        const formatDate = (date) => {
+            return date.toLocaleDateString('fr-FR', { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+            });
+        };
+
+        const formatShortDate = (date) => {
+            return date.toLocaleDateString('fr-FR');
+        };
+
+        const isSameDay = (date1, date2) => {
+            return date1.getDate() === date2.getDate() &&
+                   date1.getMonth() === date2.getMonth() &&
+                   date1.getFullYear() === date2.getFullYear();
+        };
+
+        // Main App Component
+        function App() {
+            const [currentPage, setCurrentPage] = useState('menu');
+            const [currentSession, setCurrentSession] = useState(null);
+            const [selectedDate, setSelectedDate] = useState(new Date());
+            const [currentMonth, setCurrentMonth] = useState(new Date());
+            const [workouts, setWorkouts] = useState([]);
+            const [selectedWorkout, setSelectedWorkout] = useState(null);
+            const [isLoaded, setIsLoaded] = useState(false);
+            const [showCelebration, setShowCelebration] = useState(false);
+            const [celebrationData, setCelebrationData] = useState(null);
+
+            useEffect(() => {
+                // Initialize historical data on first launch
+                Storage.initializeData();
+                
+                const loadedWorkouts = Storage.getWorkouts();
+                setWorkouts(loadedWorkouts);
+                setIsLoaded(true);
+            }, []);
+
+            useEffect(() => {
+                if (isLoaded) {
+                    Storage.saveWorkouts(workouts);
+                }
+            }, [workouts, isLoaded]);
+
+            useEffect(() => {
+                if (currentSession && isLoaded) {
+                    Storage.saveDraftSession(currentSession);
+                }
+            }, [currentSession, isLoaded]);
+
+            if (!isLoaded) {
+                return (
+                    <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        minHeight: '100vh',
+                        color: 'var(--text-primary)'
+                    }}>
+                        Chargement...
+                    </div>
+                );
+            }
+
+            const startNewSession = () => {
+                const draftSession = Storage.getDraftSession();
+                
+                if (draftSession) {
+                    setCurrentSession({
+                        ...draftSession,
+                        date: new Date(draftSession.date)
+                    });
+                } else {
+                    setCurrentSession({
+                        date: new Date(),
+                        type: null,
+                        exercises: [],
+                        comment: ''
+                    });
+                }
+                setCurrentPage('newSession');
+            };
+
+            const startPastWorkout = (customDate) => {
+                setCurrentSession({
+                    date: customDate,
+                    type: null,
+                    exercises: [],
+                    comment: ''
+                });
+                setCurrentPage('newSession');
+            };
+
+            const saveSession = () => {
+                if (!currentSession.type) {
+                    alert('Veuillez sélectionner un type de séance (S1, S2 ou S3)');
+                    return;
+                }
+                
+                // Calculate stats
+                const totalExercises = currentSession.exercises.length;
+                const totalSeries = currentSession.exercises.reduce((acc, ex) => acc + ex.series.length, 0);
+                const totalReps = currentSession.exercises.reduce((acc, ex) => 
+                    acc + ex.series.reduce((sum, s) => sum + (s.reps || 0), 0), 0
+                );
+                
+                // Calculate total weight lifted (weight × reps for each series)
+                const totalWeight = currentSession.exercises.reduce((acc, ex) => 
+                    acc + ex.series.reduce((sum, s) => sum + ((s.weight || 0) * (s.reps || 0)), 0), 0
+                );
+                
+                // Calculate heaviest lift
+                let heaviestLift = 0;
+                let heaviestExercise = '';
+                currentSession.exercises.forEach(ex => {
+                    ex.series.forEach(s => {
+                        if (s.weight > heaviestLift) {
+                            heaviestLift = s.weight;
+                            heaviestExercise = ex.name;
+                        }
+                    });
+                });
+                
+                // Show celebration
+                setCelebrationData({
+                    type: currentSession.type,
+                    exercises: totalExercises,
+                    series: totalSeries,
+                    reps: totalReps,
+                    totalWeight: totalWeight,
+                    heaviestLift: heaviestLift,
+                    heaviestExercise: heaviestExercise
+                });
+                
+                // Save immediately
+                const sessionToSave = {
+                    ...currentSession,
+                    totalWeight: totalWeight
+                };
+                const newWorkouts = [...workouts, sessionToSave];
+                setWorkouts(newWorkouts);
+                Storage.clearDraftSession();
+                
+                // Show celebration (user will dismiss it manually)
+                setShowCelebration(true);
+            };
+            
+            const dismissCelebration = () => {
+                setShowCelebration(false);
+                setCurrentSession(null);
+                setCurrentPage('menu');
+            };
+
+            const viewHistory = () => {
+                setCurrentPage('history');
+            };
+            
+            const viewStats = () => {
+                setCurrentPage('stats');
+            };
+            
+            const viewSettings = () => {
+                setCurrentPage('settings');
+            };
+
+            const goToMenu = () => {
+                setCurrentPage('menu');
+                setSelectedWorkout(null);
+            };
+
+            return (
+                <>
+                    {currentPage === 'menu' && (
+                        <MenuPage 
+                            onNewSession={startNewSession}
+                            onViewHistory={viewHistory}
+                            onViewStats={viewStats}
+                            onSettings={viewSettings}
+                        />
+                    )}
+                    
+                    {currentPage === 'newSession' && (
+                        <NewSessionPage
+                            session={currentSession}
+                            onUpdateSession={setCurrentSession}
+                            onSave={saveSession}
+                            onBack={goToMenu}
+                        />
+                    )}
+                    
+                    {currentPage === 'history' && (
+                        <HistoryPage
+                            workouts={workouts}
+                            selectedDate={selectedDate}
+                            currentMonth={currentMonth}
+                            onDateSelect={setSelectedDate}
+                            onMonthChange={setCurrentMonth}
+                            onWorkoutSelect={(workout) => {
+                                setSelectedWorkout(workout);
+                                setCurrentPage('workoutDetail');
+                            }}
+                            onAddPastWorkout={startPastWorkout}
+                            onBack={goToMenu}
+                        />
+                    )}
+                    
+                    {currentPage === 'stats' && (
+                        <StatsPage
+                            workouts={workouts}
+                            onBack={goToMenu}
+                        />
+                    )}
+                    
+                    {currentPage === 'settings' && (
+                        <SettingsPage onBack={goToMenu} />
+                    )}
+                    
+                    {currentPage === 'workoutDetail' && (
+                        <WorkoutDetailPage
+                            workout={selectedWorkout}
+                            workouts={workouts}
+                            setWorkouts={setWorkouts}
+                            onBack={() => setCurrentPage('history')}
+                        />
+                    )}
+                    
+                    {showCelebration && celebrationData && (
+                        <CelebrationScreen data={celebrationData} onDismiss={dismissCelebration} />
+                    )}
+                </>
+            );
+        }
+        
+        // Stats Page Component
+        function StatsPage({ workouts, onBack }) {
+            const [selectedExercise, setSelectedExercise] = useState(null);
+            const [selectedMonth, setSelectedMonth] = useState('all');
+            const sessionTypes = Storage.getSessionTypes();
+            
+            // Get unique months from workouts
+            const availableMonths = [...new Set(workouts.map(w => {
+                const d = new Date(w.date);
+                return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
+            }))].sort().reverse();
+            
+            // Filter workouts by selected month
+            const filteredWorkouts = selectedMonth === 'all' 
+                ? workouts 
+                : workouts.filter(w => {
+                    const d = new Date(w.date);
+                    const wMonth = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}`;
+                    return wMonth === selectedMonth;
+                });
+            
+            // Calculate stats
+            const totalWorkouts = filteredWorkouts.length;
+            const totalWeight = filteredWorkouts.reduce((sum, w) => sum + (w.totalWeight || 0), 0);
+            
+            // Session type distribution
+            const sessionCounts = sessionTypes.map(type => ({
+                ...type,
+                count: filteredWorkouts.filter(w => w.type === type.id).length
+            }));
+            
+            // Get all unique exercises
+            const allExercises = [...new Set(filteredWorkouts.flatMap(w => 
+                w.exercises.map(e => e.name)
+            ))].sort();
+            
+            // Calculate exercise progression
+            const getExerciseProgression = (exerciseName) => {
+                const data = [];
+                filteredWorkouts.forEach(workout => {
+                    const exercise = workout.exercises.find(e => e.name === exerciseName);
+                    if (exercise && exercise.series.length > 0) {
+                        // Get max weight from all series in this workout
+                        const maxWeight = Math.max(...exercise.series.map(s => s.weight || 0));
+                        if (maxWeight > 0) {
+                            data.push({
+                                date: new Date(workout.date),
+                                weight: maxWeight
+                            });
+                        }
+                    }
+                });
+                return data.sort((a, b) => a.date - b.date);
+            };
+            
+            // Get weekly volume
+            const formatMonthLabel = (monthStr) => {
+                if (monthStr === 'all') return '2026';
+                const [year, month] = monthStr.split('-');
+                const months = ['Jan','Fév','Mar','Avr','Mai','Jun','Jul','Aoû','Sep','Oct','Nov','Déc'];
+                return `${months[parseInt(month)-1]} ${year}`;
+            };
+            
+            return (
+                <>
+                    <div className="nav-bar">
+                        <div className="nav-content">
+                            <button className="nav-back" onClick={onBack}>Menu</button>
+                            <div className="nav-title">Statistiques</div>
+                            <div style={{width: '60px'}}></div>
+                        </div>
+                    </div>
+                    
+                    <div style={{padding: '20px', paddingBottom: '40px'}}>
+                        {/* Month Filter */}
+                        <div style={{marginBottom: '20px'}}>
+                            <select 
+                                className="field-select"
+                                value={selectedMonth}
+                                onChange={(e) => setSelectedMonth(e.target.value)}
+                                style={{width: '100%', fontSize: '15px', fontWeight: '600'}}
+                            >
+                                <option value="all">📊 2026</option>
+                                {availableMonths.map(m => (
+                                    <option key={m} value={m}>📅 {formatMonthLabel(m)}</option>
+                                ))}
+                            </select>
+                        </div>
+
+                        {/* Overview Stats */}
+                        <div style={{
+                            display: 'grid',
+                            gridTemplateColumns: 'repeat(2, 1fr)',
+                            gap: '12px',
+                            marginBottom: '28px'
+                        }}>
+                            <div className="exercise-card" style={{padding: '16px', textAlign: 'center'}}>
+                                <div style={{fontSize: '11px', color: 'var(--text-secondary)', marginBottom: '6px', textTransform: 'uppercase', fontWeight: '700', letterSpacing: '0.5px'}}>
+                                    Séances
+                                </div>
+                                <div style={{fontSize: '28px', fontWeight: '900', color: 'var(--accent)'}}>{totalWorkouts}</div>
+                            </div>
+                            <div className="exercise-card" style={{padding: '16px', textAlign: 'center'}}>
+                                <div style={{fontSize: '11px', color: 'var(--text-secondary)', marginBottom: '6px', textTransform: 'uppercase', fontWeight: '700', letterSpacing: '0.5px'}}>
+                                    Volume
+                                </div>
+                                <div style={{fontSize: '28px', fontWeight: '900', color: 'var(--accent)'}}>
+                                    {(totalWeight / 1000).toFixed(1)}t
+                                </div>
+                            </div>
+                        </div>
+                        
+                        {/* Session Type Distribution - Pie Chart */}
+                        {totalWorkouts > 0 && (
+                            <>
+                                <div className="section-header">Répartition des séances</div>
+                                <div className="exercise-card" style={{padding: '20px', marginBottom: '24px'}}>
+                                    <svg width="100%" height="220" viewBox="0 0 300 220" style={{display: 'block'}}>
+                                        {(() => {
+                                            const centerX = 150;
+                                            const centerY = 100;
+                                            const radius = 70;
+                                            
+                                            // Filter session types with workouts
+                                            const activeTypes = sessionCounts.filter(sc => sc.count > 0);
+                                            
+                                            if (activeTypes.length === 0) {
+                                                return (
+                                                    <text x="150" y="100" textAnchor="middle" fill="var(--text-secondary)">
+                                                        Aucune donnée
+                                                    </text>
+                                                );
+                                            }
+                                            
+                                            let currentAngle = -90; // Start at top
+                                            
+                                            return (
+                                                <>
+                                                    {activeTypes.map((sc, i) => {
+                                                        const percentage = (sc.count / totalWorkouts) * 100;
+                                                        const angle = (percentage / 100) * 360;
+                                                        
+                                                        // Calculate slice path
+                                                        const startAngle = currentAngle * (Math.PI / 180);
+                                                        const endAngle = (currentAngle + angle) * (Math.PI / 180);
+                                                        
+                                                        const x1 = centerX + radius * Math.cos(startAngle);
+                                                        const y1 = centerY + radius * Math.sin(startAngle);
+                                                        const x2 = centerX + radius * Math.cos(endAngle);
+                                                        const y2 = centerY + radius * Math.sin(endAngle);
+                                                        
+                                                        const largeArc = angle > 180 ? 1 : 0;
+                                                        
+                                                        const path = [
+                                                            `M ${centerX} ${centerY}`,
+                                                            `L ${x1} ${y1}`,
+                                                            `A ${radius} ${radius} 0 ${largeArc} 1 ${x2} ${y2}`,
+                                                            'Z'
+                                                        ].join(' ');
+                                                        
+                                                        // Label position (outside the pie)
+                                                        const labelAngle = (currentAngle + angle / 2) * (Math.PI / 180);
+                                                        const labelDistance = radius + 35;
+                                                        const labelX = centerX + labelDistance * Math.cos(labelAngle);
+                                                        const labelY = centerY + labelDistance * Math.sin(labelAngle);
+                                                        
+                                                        currentAngle += angle;
+                                                        
+                                                        return (
+                                                            <g key={i}>
+                                                                {/* Pie slice */}
+                                                                <path
+                                                                    d={path}
+                                                                    fill={sc.color}
+                                                                    stroke="var(--bg-primary)"
+                                                                    strokeWidth="3"
+                                                                    opacity="0.9"
+                                                                />
+                                                                
+                                                                {/* Percentage label */}
+                                                                <text
+                                                                    x={labelX}
+                                                                    y={labelY}
+                                                                    fill={sc.color}
+                                                                    fontSize="14"
+                                                                    fontWeight="900"
+                                                                    textAnchor="middle"
+                                                                >
+                                                                    {Math.round(percentage)}%
+                                                                </text>
+                                                            </g>
+                                                        );
+                                                    })}
+                                                    
+                                                    {/* Legend */}
+                                                    <g transform="translate(0, 180)">
+                                                        {activeTypes.map((sc, i) => {
+                                                            const x = 50 + (i * 80);
+                                                            return (
+                                                                <g key={i}>
+                                                                    {/* Color box */}
+                                                                    <rect
+                                                                        x={x}
+                                                                        y={0}
+                                                                        width={12}
+                                                                        height={12}
+                                                                        fill={sc.color}
+                                                                        rx="2"
+                                                                    />
+                                                                    {/* Label */}
+                                                                    <text
+                                                                        x={x + 18}
+                                                                        y={10}
+                                                                        fill="var(--text-primary)"
+                                                                        fontSize="12"
+                                                                        fontWeight="700"
+                                                                    >
+                                                                        {sc.name}
+                                                                    </text>
+                                                                    {/* Count */}
+                                                                    <text
+                                                                        x={x + 18}
+                                                                        y={24}
+                                                                        fill="var(--text-secondary)"
+                                                                        fontSize="10"
+                                                                        fontWeight="600"
+                                                                    >
+                                                                        {sc.count} séance{sc.count > 1 ? 's' : ''}
+                                                                    </text>
+                                                                </g>
+                                                            );
+                                                        })}
+                                                    </g>
+                                                </>
+                                            );
+                                        })()}
+                                    </svg>
+                                </div>
+                            </>
+                        )}
+
+                        {/* Session Distribution */}
+                        
+                        {/* Exercise Progression */}
+                        {allExercises.length > 0 && (
+                            <>
+                                <div className="section-header">Progression par exercice</div>
+                                <div className="exercise-card" style={{padding: '16px', marginBottom: '16px'}}>
+                                    <select 
+                                        className="field-select"
+                                        value={selectedExercise || ''}
+                                        onChange={(e) => setSelectedExercise(e.target.value)}
+                                        style={{marginBottom: '16px'}}
+                                    >
+                                        <option value="">Sélectionner un exercice...</option>
+                                        {allExercises.map((ex, i) => (
+                                            <option key={i} value={ex}>{ex}</option>
+                                        ))}
+                                    </select>
+                                    
+                                    {selectedExercise && (() => {
+                                        const progression = getExerciseProgression(selectedExercise);
+                                        if (progression.length === 0) return <div style={{textAlign: 'center', color: 'var(--text-secondary)', padding: '20px'}}>Aucune donnée</div>;
+                                        
+                                        const maxWeight = Math.max(...progression.map(p => p.weight));
+                                        const minWeight = Math.min(...progression.map(p => p.weight));
+                                        const weightRange = maxWeight - minWeight || 10;
+                                        const padding = weightRange * 0.1;
+                                        const yMin = Math.max(0, minWeight - padding);
+                                        const yMax = maxWeight + padding;
+                                        const yRange = yMax - yMin;
+                                        
+                                        // Calculate Y axis ticks (5 graduations)
+                                        const yTicks = [];
+                                        for (let i = 0; i <= 4; i++) {
+                                            yTicks.push(yMin + (yRange * i / 4));
+                                        }
+                                        
+                                        const chartWidth = 320;
+                                        const chartHeight = 200;
+                                        const marginLeft = 45;
+                                        const marginRight = 15;
+                                        const marginTop = 20;
+                                        const marginBottom = 35;
+                                        const plotWidth = chartWidth - marginLeft - marginRight;
+                                        const plotHeight = chartHeight - marginTop - marginBottom;
+                                        
+                                        return (
+                                            <>
+                                                <div style={{width: '100%', overflowX: 'auto', marginBottom: '20px'}}>
+                                                    <svg width={chartWidth} height={chartHeight} style={{display: 'block', margin: '0 auto'}}>
+                                                        <defs>
+                                                            <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                                <stop offset="0%" stopColor="#8b5cf6" />
+                                                                <stop offset="50%" stopColor="#ff3d3d" />
+                                                                <stop offset="100%" stopColor="#ff7b00" />
+                                                            </linearGradient>
+                                                        </defs>
+                                                        
+                                                        {/* Horizontal grid lines */}
+                                                        {yTicks.map((tick, i) => {
+                                                            const y = marginTop + plotHeight - ((tick - yMin) / yRange * plotHeight);
+                                                            return (
+                                                                <g key={i}>
+                                                                    <line
+                                                                        x1={marginLeft}
+                                                                        y1={y}
+                                                                        x2={marginLeft + plotWidth}
+                                                                        y2={y}
+                                                                        stroke="var(--text-tertiary)"
+                                                                        strokeWidth="1"
+                                                                        opacity="0.3"
+                                                                    />
+                                                                    <text
+                                                                        x={marginLeft - 8}
+                                                                        y={y + 4}
+                                                                        fill="var(--text-secondary)"
+                                                                        fontSize="10"
+                                                                        textAnchor="end"
+                                                                    >
+                                                                        {Math.round(tick)}kg
+                                                                    </text>
+                                                                </g>
+                                                            );
+                                                        })}
+                                                        
+                                                        {/* Data line with colored segments */}
+                                                        {progression.map((p, i) => {
+                                                            if (i === 0) return null; // Skip first point (no previous to connect)
+                                                            
+                                                            const x1 = marginLeft + ((i - 1) / (progression.length - 1 || 1)) * plotWidth;
+                                                            const y1 = marginTop + plotHeight - ((progression[i - 1].weight - yMin) / yRange * plotHeight);
+                                                            const x2 = marginLeft + (i / (progression.length - 1 || 1)) * plotWidth;
+                                                            const y2 = marginTop + plotHeight - ((p.weight - yMin) / yRange * plotHeight);
+                                                            
+                                                            const diff = p.weight - progression[i - 1].weight;
+                                                            let strokeColor;
+                                                            
+                                                            if (diff < 0) {
+                                                                strokeColor = '#ef4444'; // Red for any drop (degradation)
+                                                            } else if (diff === 0) {
+                                                                strokeColor = '#f59e0b'; // Orange for stagnation
+                                                            } else {
+                                                                strokeColor = '#22c55e'; // Green for gain (evolution)
+                                                            }
+                                                            
+                                                            return (
+                                                                <line
+                                                                    key={i}
+                                                                    x1={x1}
+                                                                    y1={y1}
+                                                                    x2={x2}
+                                                                    y2={y2}
+                                                                    stroke={strokeColor}
+                                                                    strokeWidth="3"
+                                                                    strokeLinecap="round"
+                                                                />
+                                                            );
+                                                        })}
+                                                        
+                                                        {/* Data points with values and evolution */}
+                                                        {progression.map((p, i) => {
+                                                            const x = marginLeft + (i / (progression.length - 1 || 1)) * plotWidth;
+                                                            const y = marginTop + plotHeight - ((p.weight - yMin) / yRange * plotHeight);
+                                                            const date = new Date(p.date);
+                                                            const dateLabel = `${date.getDate()}/${date.getMonth() + 1}`;
+                                                            
+                                                            // Calculate evolution from previous point
+                                                            let evolution = null;
+                                                            let evolutionColor = 'var(--text-secondary)';
+                                                            let pointColor = 'var(--accent)';
+                                                            
+                                                            if (i > 0) {
+                                                                const diff = p.weight - progression[i - 1].weight;
+                                                                if (diff !== 0) {
+                                                                    evolution = diff;
+                                                                    if (diff > 0) {
+                                                                        evolutionColor = '#22c55e';
+                                                                        pointColor = '#22c55e';
+                                                                    } else if (diff <= -5) {
+                                                                        evolutionColor = '#ef4444';
+                                                                        pointColor = '#ef4444';
+                                                                    } else {
+                                                                        evolutionColor = '#f59e0b';
+                                                                        pointColor = '#f59e0b';
+                                                                    }
+                                                                }
+                                                            }
+                                                            
+                                                            return (
+                                                                <g key={i}>
+                                                                    {/* Point circle */}
+                                                                    <circle
+                                                                        cx={x}
+                                                                        cy={y}
+                                                                        r="5"
+                                                                        fill="var(--accent)"
+                                                                        stroke="var(--bg-primary)"
+                                                                        strokeWidth="2.5"
+                                                                    />
+                                                                    {/* Weight label above point */}
+                                                                    <text
+                                                                        x={x}
+                                                                        y={y - 12}
+                                                                        fill="var(--text-primary)"
+                                                                        fontSize="11"
+                                                                        fontWeight="800"
+                                                                        textAnchor="middle"
+                                                                    >
+                                                                        {p.weight}kg
+                                                                    </text>
+                                                                    {/* Evolution indicator for changes >= 5kg */}
+                                                                    {evolution !== null && Math.abs(evolution) >= 5 && (
+                                                                        <text
+                                                                            x={x}
+                                                                            y={y - 24}
+                                                                            fill={evolutionColor}
+                                                                            fontSize="10"
+                                                                            fontWeight="900"
+                                                                            textAnchor="middle"
+                                                                        >
+                                                                            {evolution > 0 ? '+' : ''}{evolution}kg
+                                                                        </text>
+                                                                    )}
+                                                                    {/* Date label below */}
+                                                                    <text
+                                                                        x={x}
+                                                                        y={chartHeight - 10}
+                                                                        fill="var(--text-secondary)"
+                                                                        fontSize="9"
+                                                                        textAnchor="middle"
+                                                                    >
+                                                                        {dateLabel}
+                                                                    </text>
+                                                                </g>
+                                                            );
+                                                        })}
+                                                        
+                                                        {/* Axes */}
+                                                        <line
+                                                            x1={marginLeft}
+                                                            y1={marginTop}
+                                                            x2={marginLeft}
+                                                            y2={marginTop + plotHeight}
+                                                            stroke="var(--text-secondary)"
+                                                            strokeWidth="2"
+                                                            opacity="0.4"
+                                                        />
+                                                        <line
+                                                            x1={marginLeft}
+                                                            y1={marginTop + plotHeight}
+                                                            x2={marginLeft + plotWidth}
+                                                            y2={marginTop + plotHeight}
+                                                            stroke="var(--text-secondary)"
+                                                            strokeWidth="2"
+                                                            opacity="0.4"
+                                                        />
+                                                    </svg>
+                                                </div>
+                                                <div style={{
+                                                    display: 'flex',
+                                                    justifyContent: 'space-around',
+                                                    fontSize: '12px',
+                                                    color: 'var(--text-secondary)',
+                                                    fontWeight: '600',
+                                                    padding: '12px',
+                                                    background: 'var(--bg-tertiary)',
+                                                    borderRadius: '8px'
+                                                }}>
+                                                    <div style={{textAlign: 'center'}}>
+                                                        <div style={{fontSize: '10px', marginBottom: '4px', opacity: 0.7}}>DÉBUT</div>
+                                                        <div style={{color: 'var(--text-primary)', fontSize: '16px', fontWeight: '900'}}>{progression[0].weight}kg</div>
+                                                    </div>
+                                                    <div style={{textAlign: 'center'}}>
+                                                        <div style={{fontSize: '10px', marginBottom: '4px', opacity: 0.7}}>ACTUEL</div>
+                                                        <div style={{color: '#22c55e', fontSize: '16px', fontWeight: '900'}}>{progression[progression.length - 1].weight}kg</div>
+                                                    </div>
+                                                    <div style={{textAlign: 'center'}}>
+                                                        <div style={{fontSize: '10px', marginBottom: '4px', opacity: 0.7}}>ÉVOLUTION</div>
+                                                        <div style={{
+                                                            color: progression[progression.length - 1].weight > progression[0].weight ? '#22c55e' : progression[progression.length - 1].weight < progression[0].weight ? '#ef4444' : 'var(--text-primary)', 
+                                                            fontSize: '16px', 
+                                                            fontWeight: '900'
+                                                        }}>
+                                                            {(() => {
+                                                                const diff = progression[progression.length - 1].weight - progression[0].weight;
+                                                                const percent = progression[0].weight > 0 ? ((diff / progression[0].weight) * 100).toFixed(1) : 0;
+                                                                return `${diff > 0 ? '+' : ''}${diff}kg (${percent > 0 ? '+' : ''}${percent}%)`;
+                                                            })()}
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </>
+                                        );
+                                    })()}
+                                </div>
+                            </>
+                        )}
+                        
+                        {totalWorkouts === 0 && (
+                            <div style={{
+                                textAlign: 'center',
+                                padding: '60px 20px',
+                                color: 'var(--text-secondary)'
+                            }}>
+                                {selectedMonth === 'all' ? (
+                                    <>Aucune donnée pour le moment.<br/>Commence à t'entraîner !</>
+                                ) : (
+                                    <>Aucune séance en {formatMonthLabel(selectedMonth)}.</>
+                                )}
+                            </div>
+                        )}
+                    </div>
+                </>
+            );
+        }
+        
+        
+        // Celebration Screen Component
+        function CelebrationScreen({ data, onDismiss }) {
+            const st = resolveSessionType(data.type);
+            const confettiColors = ['#ef4444', '#f97316', '#eab308', '#22c55e', '#3b82f6', '#8b5cf6', '#ec4899'];
+            
+            useEffect(() => {
+                const confettiContainer = document.querySelector('.celebration-overlay');
+                for (let i = 0; i < 50; i++) {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    confetti.style.left = Math.random() * 100 + '%';
+                    confetti.style.background = confettiColors[Math.floor(Math.random() * confettiColors.length)];
+                    confetti.style.animationDelay = Math.random() * 0.5 + 's';
+                    confetti.style.animationDuration = (Math.random() * 2 + 2) + 's';
+                    confettiContainer.appendChild(confetti);
+                }
+            }, []);
+            
+            return (
+                <div className="celebration-overlay" onClick={onDismiss}>
+                    <div className="celebration-content">
+                        <div className="celebration-icon">🎉</div>
+                        <div className="celebration-title">Bravo !</div>
+                        <div className="celebration-message" style={{color: st.color, fontSize: sessionTypeFontSize(st.name)}}>
+                            Séance {st.name} terminée
+                        </div>
+                        
+                        <div className="celebration-stats">
+                            <div className="celebration-stat">
+                                <span className="celebration-stat-label">🏋️ Poids total soulevé</span>
+                                <span className="celebration-stat-value">{data.totalWeight.toLocaleString()} kg</span>
+                            </div>
+                            <div className="celebration-stat">
+                                <span className="celebration-stat-label">💪 Exercices</span>
+                                <span className="celebration-stat-value">{data.exercises}</span>
+                            </div>
+                            <div className="celebration-stat">
+                                <span className="celebration-stat-label">📊 Séries</span>
+                                <span className="celebration-stat-value">{data.series}</span>
+                            </div>
+                            <div className="celebration-stat">
+                                <span className="celebration-stat-label">🔄 Répétitions totales</span>
+                                <span className="celebration-stat-value">{data.reps}</span>
+                            </div>
+                            {data.heaviestLift > 0 && (
+                                <div className="celebration-stat">
+                                    <span className="celebration-stat-label">🏆 Plus lourd</span>
+                                    <span className="celebration-stat-value">{data.heaviestLift} kg</span>
+                                </div>
+                            )}
+                        </div>
+                        
+                        <div style={{
+                            marginTop: '24px',
+                            fontSize: '15px',
+                            color: 'var(--text-secondary)',
+                            textAlign: 'center'
+                        }}>
+                            Appuyez n'importe où pour continuer
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        // Menu Page Component
+        function MenuPage({ onNewSession, onViewHistory, onViewStats, onSettings }) {
+            const hasDraft = Storage.getDraftSession() !== null;
+            const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'dark');
+
+            useEffect(() => {
+                localStorage.setItem('theme', theme);
+                document.body.className = theme === 'light' ? 'theme-light' : '';
+            }, [theme]);
+
+            const exportData = () => {
+                try {
+                    const data = {
+                        version: '1.0',
+                        exportDate: new Date().toISOString(),
+                        workouts: Storage.getWorkouts(),
+                        sessionTypes: Storage.getSessionTypes(),
+                        exerciseNames: Storage.getExerciseNames(),
+                        theme: theme
+                    };
+                    
+                    const dataStr = JSON.stringify(data, null, 2);
+                    const dataBlob = new Blob([dataStr], { type: 'application/json' });
+                    const url = URL.createObjectURL(dataBlob);
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = `carnet-sport-backup-${new Date().toISOString().split('T')[0]}.json`;
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    URL.revokeObjectURL(url);
+                    
+                    alert('✅ Données exportées avec succès !');
+                } catch (error) {
+                    console.error('Export error:', error);
+                    alert('❌ Erreur lors de l\'export des données');
+                }
+            };
+
+            const importData = () => {
+                const input = document.createElement('input');
+                input.type = 'file';
+                input.accept = '.json';
+                
+                input.onchange = (e) => {
+                    const file = e.target.files[0];
+                    if (!file) return;
+                    
+                    const reader = new FileReader();
+                    reader.onload = (event) => {
+                        try {
+                            const data = JSON.parse(event.target.result);
+                            
+                            // Validate data structure
+                            if (!data.workouts || !Array.isArray(data.workouts)) {
+                                throw new Error('Format de fichier invalide');
+                            }
+                            
+                            // Confirm before overwriting
+                            const currentWorkouts = Storage.getWorkouts();
+                            let message = `📥 Importer ${data.workouts.length} séances ?\n\n`;
+                            
+                            if (currentWorkouts.length > 0) {
+                                message += `⚠️ Vous avez déjà ${currentWorkouts.length} séances.\n\n`;
+                                message += `Choisissez :\n`;
+                                message += `OK = REMPLACER toutes vos données actuelles\n`;
+                                message += `Annuler = Fusionner les données (garder les deux)`;
+                            }
+                            
+                            const shouldReplace = confirm(message);
+                            
+                            if (shouldReplace === null) return; // Cancelled
+                            
+                            let finalWorkouts;
+                            if (shouldReplace) {
+                                // Replace all data
+                                finalWorkouts = data.workouts;
+                            } else {
+                                // Merge data (keep existing + add new ones with unique IDs)
+                                const existingIds = new Set(currentWorkouts.map(w => w.id));
+                                const newWorkouts = data.workouts.filter(w => !existingIds.has(w.id));
+                                finalWorkouts = [...currentWorkouts, ...newWorkouts];
+                            }
+                            
+                            // Save workouts
+                            localStorage.setItem('workouts', JSON.stringify(finalWorkouts));
+                            
+                            // Import session types if provided
+                            if (data.sessionTypes && Array.isArray(data.sessionTypes)) {
+                                localStorage.setItem('sessionTypes', JSON.stringify(data.sessionTypes));
+                            }
+                            
+                            // Import exercise names if provided
+                            if (data.exerciseNames && Array.isArray(data.exerciseNames)) {
+                                const currentNames = Storage.getExerciseNames();
+                                const mergedNames = [...new Set([...currentNames, ...data.exerciseNames])];
+                                localStorage.setItem('exerciseNames', JSON.stringify(mergedNames));
+                            }
+                            
+                            // Import theme if provided
+                            if (data.theme) {
+                                setTheme(data.theme);
+                            }
+                            
+                            alert(`✅ Import réussi !\n\n${finalWorkouts.length} séances au total`);
+                            window.location.reload(); // Reload to show new data
+                            
+                        } catch (error) {
+                            console.error('Import error:', error);
+                            alert(`❌ Erreur lors de l'import :\n${error.message}`);
+                        }
+                    };
+                    
+                    reader.readAsText(file);
+                };
+                
+                input.click();
+            };
+
+            const resetAllData = () => {
+                const confirmMsg = `⚠️ ATTENTION : RÉINITIALISATION TOTALE\n\n` +
+                    `Cela va SUPPRIMER définitivement :\n` +
+                    `• Toutes vos séances d'entraînement\n` +
+                    `• Tous vos exercices enregistrés\n` +
+                    `• Toutes vos statistiques\n` +
+                    `• Tous les types de séances personnalisés\n\n` +
+                    `Cette action est IRRÉVERSIBLE !\n\n` +
+                    `Voulez-vous vraiment continuer ?`;
+                
+                if (confirm(confirmMsg)) {
+                    // Double confirmation
+                    if (confirm('⚠️ DERNIÈRE CONFIRMATION\n\nÊtes-vous ABSOLUMENT SÛR ?\n\nToutes vos données seront PERDUES !')) {
+                        try {
+                            // Clear all data
+                            localStorage.removeItem('workouts');
+                            localStorage.removeItem('exerciseNames');
+                            localStorage.removeItem('sessionTypes');
+                            localStorage.removeItem('draftSession');
+                            localStorage.removeItem('dataInitialized');
+                            
+                            alert('✅ Toutes les données ont été supprimées !\n\nL\'application va redémarrer...');
+                            window.location.reload();
+                        } catch (error) {
+                            console.error('Reset error:', error);
+                            alert('❌ Erreur lors de la réinitialisation');
+                        }
+                    }
+                }
+            };
+
+            return (
+                <div className="menu-page">
+                    <div className="menu-header">
+                        <div className="menu-logo">
+                            <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15,18 L15,42 Q15,44 17,44 L43,44 Q45,44 45,42 L45,18 Q45,16 43,16 L17,16 Q15,16 15,18 Z" 
+                                    fill="white" opacity="0.95"/>
+                                <line x1="30" y1="16" x2="30" y2="44" stroke="white" strokeWidth="1.5" opacity="0.4"/>
+                                <line x1="20" y1="24" x2="26" y2="24" stroke="rgba(255,255,255,0.9)" strokeWidth="1.5" strokeLinecap="round"/>
+                                <line x1="20" y1="30" x2="27" y2="30" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" strokeLinecap="round"/>
+                                <line x1="20" y1="36" x2="25" y2="36" stroke="rgba(255,255,255,0.5)" strokeWidth="1.5" strokeLinecap="round"/>
+                                <line x1="34" y1="24" x2="40" y2="24" stroke="rgba(255,255,255,0.9)" strokeWidth="1.5" strokeLinecap="round"/>
+                                <line x1="33" y1="30" x2="40" y2="30" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5" strokeLinecap="round"/>
+                                <line x1="35" y1="36" x2="40" y2="36" stroke="rgba(255,255,255,0.5)" strokeWidth="1.5" strokeLinecap="round"/>
+                            </svg>
+                        </div>
+                        <h1 className="menu-title">Carnet de Sport</h1>
+                        <p className="menu-subtitle">Votre progression au quotidien</p>
+                    </div>
+                    
+                    <div className="menu-actions">
+                        <button className="menu-button menu-button-centered" onClick={onNewSession}>
+                            <div className="menu-button-title">{hasDraft ? 'Continuer la séance' : 'Nouvelle séance'}</div>
+                            <div className="menu-button-desc">{hasDraft ? 'Reprendre là où vous en étiez' : 'Commencer un entraînement'}</div>
+                        </button>
+                        <button className="menu-button menu-button-centered" onClick={onViewHistory}>
+                            <div className="menu-button-title">Historique</div>
+                            <div className="menu-button-desc">Consulter vos séances passées</div>
+                        </button>
+                        <button className="menu-button menu-button-centered" onClick={onViewStats}>
+                            <div className="menu-button-title">Statistiques</div>
+                            <div className="menu-button-desc">Suivre votre progression</div>
+                        </button>
+                        
+                        {/* Data backup buttons - smaller */}
+                        <div style={{
+                            width: '100%',
+                            display: 'grid',
+                            gridTemplateColumns: '1fr 1fr',
+                            gap: '12px',
+                            marginTop: '12px'
+                        }}>
+                            <button 
+                                className="menu-button menu-button-centered" 
+                                onClick={exportData}
+                                style={{
+                                    background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+                                    padding: '12px 16px',
+                                    minHeight: 'unset'
+                                }}
+                            >
+                                <div className="menu-button-title" style={{fontSize: '14px', marginBottom: '2px'}}>💾 Exporter</div>
+                                <div className="menu-button-desc" style={{fontSize: '10px'}}>Sauvegarder</div>
+                            </button>
+                            <button 
+                                className="menu-button menu-button-centered" 
+                                onClick={importData}
+                                style={{
+                                    background: 'linear-gradient(135deg, #3b82f6 0%, #2563eb 100%)',
+                                    padding: '12px 16px',
+                                    minHeight: 'unset'
+                                }}
+                            >
+                                <div className="menu-button-title" style={{fontSize: '14px', marginBottom: '2px'}}>📥 Importer</div>
+                                <div className="menu-button-desc" style={{fontSize: '10px'}}>Restaurer</div>
+                            </button>
+                        </div>
+                        
+                        {/* Reset All Data Button */}
+                        <button 
+                            className="menu-button menu-button-centered" 
+                            onClick={resetAllData}
+                            style={{
+                                background: 'linear-gradient(135deg, #ef4444 0%, #dc2626 100%)',
+                                border: '1px solid rgba(239, 68, 68, 0.3)',
+                                marginTop: '12px'
+                            }}
+                        >
+                            <div className="menu-button-title" style={{fontSize: '15px', marginBottom: '4px'}}>🗑️ Réinitialiser</div>
+                            <div className="menu-button-desc" style={{fontSize: '11px'}}>Supprimer toutes les données</div>
+                        </button>
+                    </div>
+
+                    <div className="theme-switcher">
+                        <div className="theme-toggle">
+                            <button className={`theme-toggle-btn ${theme === 'dark' ? 'active' : ''}`} onClick={() => setTheme('dark')} title="Mode nuit">
+                                🌙
+                            </button>
+                            <button className={`theme-toggle-btn ${theme === 'light' ? 'active' : ''}`} onClick={() => setTheme('light')} title="Mode clair">
+                                ☀️
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+        // Settings Page - Session Types Manager
+        function SettingsPage({ onBack }) {
+            const [sessionTypes, setSessionTypes] = useState(Storage.getSessionTypes());
+            const [editingId, setEditingId] = useState(null);
+            const [editName, setEditName] = useState('');
+            const [showAddModal, setShowAddModal] = useState(false);
+            const [newName, setNewName] = useState('');
+
+            const save = (types) => {
+                setSessionTypes(types);
+                Storage.saveSessionTypes(types);
+            };
+
+            const startEdit = (type) => {
+                setEditingId(type.id);
+                setEditName(type.name);
+            };
+
+            const confirmEdit = (id) => {
+                if (!editName.trim()) return;
+                save(sessionTypes.map(t => t.id === id ? { ...t, name: editName.trim() } : t));
+                setEditingId(null);
+            };
+
+            const deleteType = (id) => {
+                if (sessionTypes.length <= 1) {
+                    alert('Il faut au minimum un type de séance.');
+                    return;
+                }
+                if (confirm('Supprimer ce type ? Les séances déjà réalisées avec ce type resteront dans l\'historique.')) {
+                    save(sessionTypes.filter(t => t.id !== id));
+                }
+            };
+
+            const addType = () => {
+                if (!newName.trim()) return;
+                const colors = ['#8b5cf6','#059669','#0ea5e9','#f59e0b','#ec4899','#14b8a6'];
+                const newId = 's' + Date.now();
+                const color = colors[sessionTypes.length % colors.length];
+                save([...sessionTypes, { id: newId, name: newName.trim(), color }]);
+                setNewName('');
+                setShowAddModal(false);
+            };
+
+            return (
+                <>
+                    <div className="nav-bar">
+                        <div className="nav-content">
+                            <button className="nav-back" onClick={onBack}>Menu</button>
+                            <div className="nav-title">Types de séance</div>
+                            <div style={{width: '60px'}}></div>
+                        </div>
+                    </div>
+
+                    <div style={{padding: '20px'}}>
+                        <div className="section-header">Vos types de séance</div>
+                        <p style={{fontSize: '13px', color: 'var(--text-secondary)', marginBottom: '20px'}}>
+                            Modifiez les noms ou ajoutez de nouveaux types. Les séances passées sont conservées dans l'historique même si vous supprimez un type.
+                        </p>
+
+                        {sessionTypes.map(type => (
+                            <div key={type.id} className="exercise-card" style={{
+                                display: 'flex', alignItems: 'center', gap: '14px', padding: '16px', marginBottom: '10px'
+                            }}>
+                                <div style={{
+                                    width: '12px', height: '12px', borderRadius: '50%',
+                                    background: type.color, flexShrink: 0
+                                }}/>
+                                {editingId === type.id ? (
+                                    <input
+                                        autoFocus
+                                        className="field-input"
+                                        style={{flex: 1, padding: '8px 12px', fontSize: '17px'}}
+                                        value={editName}
+                                        onChange={e => setEditName(e.target.value)}
+                                        onKeyDown={e => e.key === 'Enter' && confirmEdit(type.id)}
+                                    />
+                                ) : (
+                                    <span style={{flex: 1, fontSize: '17px', fontWeight: '700'}}>{type.name}</span>
+                                )}
+                                {editingId === type.id ? (
+                                    <button className="nav-button" onClick={() => confirmEdit(type.id)}>✓</button>
+                                ) : (
+                                    <button className="nav-button" style={{marginRight: '8px'}} onClick={() => startEdit(type)}>✏️</button>
+                                )}
+                                <button className="delete-btn" onClick={() => deleteType(type.id)}>×</button>
+                            </div>
+                        ))}
+
+                        <button className="add-exercise-btn" style={{width: '100%', margin: '16px 0 0'}}
+                            onClick={() => setShowAddModal(true)}>
+                            + Ajouter un type de séance
+                        </button>
+                    </div>
+
+                    {showAddModal && (
+                        <div className="modal-overlay" onClick={() => setShowAddModal(false)}>
+                            <div className="modal" onClick={e => e.stopPropagation()}>
+                                <div className="modal-handle"/>
+                                <div className="modal-header">
+                                    <div className="modal-title">Nouveau type</div>
+                                    <button className="modal-close-btn" onClick={() => setShowAddModal(false)}>Annuler</button>
+                                </div>
+                                <div className="modal-body">
+                                    <div className="form-field">
+                                        <label className="field-label">Nom du type</label>
+                                        <input
+                                            autoFocus
+                                            type="text"
+                                            className="field-input"
+                                            placeholder="Ex: Force, Cardio, Mobilité..."
+                                            value={newName}
+                                            onChange={e => setNewName(e.target.value)}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="modal-actions">
+                                    <button className="modal-btn modal-btn-primary" onClick={addType}>Ajouter</button>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </>
+            );
+        }
+        function Chronometre() {
+            const [time, setTime] = useState(0);
+            const [running, setRunning] = useState(false);
+            const [laps, setLaps] = useState([]);
+            const intervalRef = React.useRef(null);
+
+            useEffect(() => {
+                if (running) {
+                    intervalRef.current = setInterval(() => {
+                        setTime(t => t + 10);
+                    }, 10);
+                } else {
+                    clearInterval(intervalRef.current);
+                }
+                return () => clearInterval(intervalRef.current);
+            }, [running]);
+
+            const formatTime = (ms) => {
+                const mins = Math.floor(ms / 60000);
+                const secs = Math.floor((ms % 60000) / 1000);
+                const cents = Math.floor((ms % 1000) / 10);
+                return `${String(mins).padStart(2,'0')}:${String(secs).padStart(2,'0')}.${String(cents).padStart(2,'0')}`;
+            };
+
+            const handleLap = () => {
+                const lastLap = laps.length > 0 ? laps[laps.length - 1].total : 0;
+                setLaps(prev => [...prev, {
+                    num: prev.length + 1,
+                    split: time - lastLap,
+                    total: time
+                }]);
+            };
+
+            const handleReset = () => {
+                setRunning(false);
+                setTime(0);
+                setLaps([]);
+            };
+
+            return (
+                <div className="chrono-container">
+                    <div className="chrono-label">Chronomètre</div>
+                    <div className={`chrono-display ${running ? 'running' : ''}`}>
+                        {formatTime(time)}
+                    </div>
+                    <div className="chrono-buttons">
+                        <button
+                            className={`chrono-btn ${running ? 'chrono-btn-pause' : 'chrono-btn-start'}`}
+                            onClick={() => setRunning(r => !r)}
+                        >
+                            {running ? 'Pause' : 'Start'}
+                        </button>
+                        <button className="chrono-btn chrono-btn-lap" onClick={handleLap} disabled={!running}>
+                            Tour
+                        </button>
+                        <button className="chrono-btn chrono-btn-reset" onClick={handleReset}>
+                            Reset
+                        </button>
+                    </div>
+                    {laps.length > 0 && (
+                        <div className="chrono-laps">
+                            {[...laps].reverse().map(lap => (
+                                <div key={lap.num} className="chrono-lap-item">
+                                    <span>Tour {lap.num}</span>
+                                    <span>{formatTime(lap.split)}</span>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                </div>
+            );
+        }
+        function NewSessionPage({ session, onUpdateSession, onSave, onBack }) {
+            const [showExerciseModal, setShowExerciseModal] = useState(false);
+            const [showSeriesModal, setShowSeriesModal] = useState(false);
+            const [currentExerciseIndex, setCurrentExerciseIndex] = useState(null);
+            const [currentSeriesIndex, setCurrentSeriesIndex] = useState(null);
+            const [sessionTypes, setSessionTypes] = useState(Storage.getSessionTypes());
+            const [managingTypes, setManagingTypes] = useState(false);
+            const [editingTypeId, setEditingTypeId] = useState(null);
+            const [editingTypeName, setEditingTypeName] = useState('');
+            const [showAddTypeModal, setShowAddTypeModal] = useState(false);
+            const [newTypeName, setNewTypeName] = useState('');
+
+            const saveTypes = (types) => {
+                setSessionTypes(types);
+                Storage.saveSessionTypes(types);
+            };
+
+            const confirmEditType = (id) => {
+                if (!editingTypeName.trim()) return;
+                saveTypes(sessionTypes.map(t => t.id === id ? { ...t, name: editingTypeName.trim() } : t));
+                setEditingTypeId(null);
+            };
+
+            const deleteSessionType = (id) => {
+                if (sessionTypes.length <= 1) {
+                    alert('Il faut au minimum un type de séance.');
+                    return;
+                }
+                if (confirm('Supprimer ce type ? Les séances passées avec ce type restent dans l\'historique.')) {
+                    saveTypes(sessionTypes.filter(t => t.id !== id));
+                    if (session.type === id) onUpdateSession({ ...session, type: null });
+                }
+            };
+
+            const addSessionType = () => {
+                if (!newTypeName.trim()) return;
+                const existingColors = sessionTypes.map(t => t.color);
+                const color = getDistinctColor(existingColors);
+                const newId = 's' + Date.now();
+                saveTypes([...sessionTypes, { id: newId, name: newTypeName.trim(), color }]);
+                setNewTypeName('');
+                setShowAddTypeModal(false);
+            };
+
+            const handleDeleteDraft = () => {
+                if (confirm('Voulez-vous vraiment supprimer ce brouillon et recommencer à zéro ?')) {
+                    Storage.clearDraftSession();
+                    onUpdateSession({
+                        date: new Date(),
+                        type: null,
+                        exercises: [],
+                        comment: ''
+                    });
+                }
+            };
+
+            const selectSessionType = (type) => {
+                onUpdateSession({ ...session, type });
+            };
+
+            const addExercise = (exercise) => {
+                const romanNumerals = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
+                const newExercise = {
+                    number: romanNumerals[session.exercises.length] || (session.exercises.length + 1),
+                    ...exercise,
+                    series: []
+                };
+                onUpdateSession({
+                    ...session,
+                    exercises: [...session.exercises, newExercise]
+                });
+                Storage.addExerciseName(exercise.name);
+            };
+
+            const deleteExercise = (index) => {
+                const newExercises = session.exercises.filter((_, i) => i !== index);
+                onUpdateSession({ ...session, exercises: newExercises });
+            };
+
+            const addSeries = (exerciseIndex) => {
+                setCurrentExerciseIndex(exerciseIndex);
+                setCurrentSeriesIndex(session.exercises[exerciseIndex].series.length);
+                setShowSeriesModal(true);
+            };
+
+            const saveSeries = (seriesData) => {
+                const newExercises = [...session.exercises];
+                if (currentSeriesIndex === newExercises[currentExerciseIndex].series.length) {
+                    newExercises[currentExerciseIndex].series.push(seriesData);
+                } else {
+                    newExercises[currentExerciseIndex].series[currentSeriesIndex] = seriesData;
+                }
+                onUpdateSession({ ...session, exercises: newExercises });
+            };
+
+            const editSeries = (exerciseIndex, seriesIndex) => {
+                setCurrentExerciseIndex(exerciseIndex);
+                setCurrentSeriesIndex(seriesIndex);
+                setShowSeriesModal(true);
+            };
+
+            return (
+                <>
+                    <div className="nav-bar">
+                        <div className="nav-content">
+                            <button className="nav-back" onClick={onBack}>
+                                Retour
+                            </button>
+                            <div className="nav-title">Nouvelle Séance</div>
+                            <div className="nav-actions">
+                                <button className="nav-icon-btn" onClick={handleDeleteDraft}>
+                                    🗑️
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="session-type-section">
+                        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px', padding: '0 4px'}}>
+                            <div className="section-header" style={{marginBottom: 0}}>Type de séance</div>
+                            <button
+                                onClick={() => setManagingTypes(m => !m)}
+                                style={{
+                                    background: managingTypes ? 'rgba(255,61,61,0.15)' : 'var(--bg-tertiary)',
+                                    border: 'none',
+                                    borderRadius: '20px',
+                                    padding: '5px 12px',
+                                    fontSize: '12px',
+                                    fontWeight: '700',
+                                    color: managingTypes ? 'var(--accent)' : 'var(--text-secondary)',
+                                    cursor: 'pointer',
+                                    textTransform: 'uppercase',
+                                    letterSpacing: '0.5px'
+                                }}
+                            >
+                                {managingTypes ? 'Terminer' : 'Modifier'}
+                            </button>
+                        </div>
+
+                        {!managingTypes ? (
+                            <div className="session-type-grid" style={{gridTemplateColumns: `repeat(${Math.min(sessionTypes.length, 3)}, 1fr)`}}>
+                                {sessionTypes.map(type => (
+                                    <button
+                                        key={type.id}
+                                        className={`session-type-card ${session.type === type.id ? 'selected' : ''}`}
+                                        style={{color: type.color}}
+                                        onClick={() => onUpdateSession({ ...session, type: type.id })}
+                                    >
+                                        <div className="session-type-label" style={{
+                                            fontSize: sessionTypeFontSize(type.name)
+                                        }}>
+                                            {type.name}
+                                        </div>
+                                    </button>
+                                ))}
+                            </div>
+                        ) : (
+                            <div style={{marginBottom: '16px'}}>
+                                {sessionTypes.map(type => (
+                                    <div key={type.id} style={{
+                                        display: 'flex', alignItems: 'center', gap: '10px',
+                                        background: 'var(--bg-secondary)', borderRadius: '12px',
+                                        padding: '12px 14px', marginBottom: '8px',
+                                        border: `1px solid ${type.color}33`
+                                    }}>
+                                        <div style={{
+                                            width: '10px', height: '10px', borderRadius: '50%',
+                                            background: type.color, flexShrink: 0
+                                        }}/>
+                                        {editingTypeId === type.id ? (
+                                            <input
+                                                autoFocus
+                                                className="field-input"
+                                                style={{flex: 1, padding: '6px 10px', fontSize: '16px'}}
+                                                value={editingTypeName}
+                                                onChange={e => setEditingTypeName(e.target.value)}
+                                                onKeyDown={e => e.key === 'Enter' && confirmEditType(type.id)}
+                                            />
+                                        ) : (
+                                            <span style={{flex: 1, fontSize: '17px', fontWeight: '700'}}>{type.name}</span>
+                                        )}
+                                        {editingTypeId === type.id ? (
+                                            <button
+                                                onClick={() => confirmEditType(type.id)}
+                                                style={{background:'rgba(255,61,61,0.15)', border:'none', borderRadius:'8px', padding:'6px 10px', color:'var(--accent)', fontWeight:'700', cursor:'pointer', fontSize:'14px'}}
+                                            >✓</button>
+                                        ) : (
+                                            <button
+                                                onClick={() => { setEditingTypeId(type.id); setEditingTypeName(type.name); }}
+                                                style={{background:'var(--bg-tertiary)', border:'none', borderRadius:'8px', padding:'6px 10px', color:'var(--text-secondary)', cursor:'pointer', fontSize:'14px'}}
+                                            >✏️</button>
+                                        )}
+                                        <button
+                                            onClick={() => deleteSessionType(type.id)}
+                                            style={{background:'rgba(255,61,61,0.1)', border:'none', borderRadius:'8px', padding:'6px 10px', color:'var(--accent)', fontWeight:'700', cursor:'pointer', fontSize:'16px'}}
+                                        >×</button>
+                                    </div>
+                                ))}
+                                <button
+                                    className="add-series-btn"
+                                    style={{width:'100%', marginTop: '4px'}}
+                                    onClick={() => setShowAddTypeModal(true)}
+                                >
+                                    + Ajouter un type
+                                </button>
+                            </div>
+                        )}
+                    </div>
+
+                    {session.type && <Chronometre />}
+
+                    {session.exercises.length > 0 && (
+                        <div className="section-header" style={{padding: '0 20px'}}>Exercices</div>
+                    )}
+
+                    <div className="exercises-list">
+                        {session.exercises.map((exercise, exerciseIndex) => (
+                            <div key={exerciseIndex} className="exercise-card">
+                                <div className="exercise-card-header">
+                                    <div className="exercise-info">
+                                        <div className="exercise-number">{exercise.number}</div>
+                                        <div className="exercise-name">{exercise.name}</div>
+                                        <div className="exercise-rest">{exercise.rest}</div>
+                                    </div>
+                                    <button 
+                                        className="delete-btn"
+                                        onClick={() => deleteExercise(exerciseIndex)}
+                                    >
+                                        ×
+                                    </button>
+                                </div>
+                                <div className="series-container">
+                                    {exercise.series.map((series, seriesIndex) => (
+                                        <div 
+                                            key={seriesIndex} 
+                                            className={`series-card ${series.weight && series.reps ? 'completed' : ''}`}
+                                        >
+                                            <div onClick={() => editSeries(exerciseIndex, seriesIndex)}>
+                                                <div className="series-header">Série {seriesIndex + 1}</div>
+                                                {series.weight && series.reps ? (
+                                                    <>
+                                                        <div className="series-data">
+                                                            {series.weight}kg × {series.reps} reps
+                                                        </div>
+                                                        {series.rest && (
+                                                            <div style={{
+                                                                fontSize: '12px',
+                                                                color: 'var(--accent)',
+                                                                marginTop: '4px',
+                                                                fontWeight: '600'
+                                                            }}>
+                                                                ⏱ RIS : {series.rest}
+                                                            </div>
+                                                        )}
+                                                        {series.comment && (
+                                                            <div className="series-comment">{series.comment}</div>
+                                                        )}
+                                                    </>
+                                                ) : (
+                                                    <div className="series-data" style={{color: 'var(--text-secondary)'}}>
+                                                        Appuyer pour remplir
+                                                    </div>
+                                                )}
+                                            </div>
+                                            {series.weight && series.reps && (
+                                                <div className="series-indicators">
+                                                    <button
+                                                        className={`indicator-btn ${series.indicator === 'up' ? 'active' : ''}`}
+                                                        onClick={(e) => {
+                                                            e.stopPropagation();
+                                                            const newSession = {...session};
+                                                            newSession.exercises[exerciseIndex].series[seriesIndex].indicator = 
+                                                                series.indicator === 'up' ? null : 'up';
+                                                            onUpdateSession(newSession);
+                                                        }}
+                                                        title="Monter le poids"
+                                                    >
+                                                        ↗
+                                                    </button>
+                                                    <button
+                                                        className={`indicator-btn ${series.indicator === 'same' ? 'active' : ''}`}
+                                                        onClick={(e) => {
+                                                            e.stopPropagation();
+                                                            const newSession = {...session};
+                                                            newSession.exercises[exerciseIndex].series[seriesIndex].indicator = 
+                                                                series.indicator === 'same' ? null : 'same';
+                                                            onUpdateSession(newSession);
+                                                        }}
+                                                        title="Garder le même poids"
+                                                    >
+                                                        →
+                                                    </button>
+                                                    <button
+                                                        className={`indicator-btn ${series.indicator === 'down' ? 'active' : ''}`}
+                                                        onClick={(e) => {
+                                                            e.stopPropagation();
+                                                            const newSession = {...session};
+                                                            newSession.exercises[exerciseIndex].series[seriesIndex].indicator = 
+                                                                series.indicator === 'down' ? null : 'down';
+                                                            onUpdateSession(newSession);
+                                                        }}
+                                                        title="Baisser le poids"
+                                                    >
+                                                        ↘
+                                                    </button>
+                                                </div>
+                                            )}
+                                        </div>
+                                    ))}
+                                    <button 
+                                        className="add-series-btn"
+                                        onClick={() => addSeries(exerciseIndex)}
+                                    >
+                                        + Ajouter série
+                                    </button>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    <button className="add-exercise-btn" onClick={() => setShowExerciseModal(true)}>
+                        + Ajouter exercice
+                    </button>
+
+                    <div className="comment-section">
+                        <div className="comment-label">Commentaire séance</div>
+                        <textarea
+                            className="comment-input"
+                            placeholder="Notes générales sur la séance..."
+                            value={session.comment}
+                            onChange={(e) => onUpdateSession({ ...session, comment: e.target.value })}
+                        />
+                    </div>
+
+                    <div className="bottom-action-btn">
+                        <button className="action-btn" onClick={onSave}>
+                            Terminer la séance
+                        </button>
+                    </div>
+
+                    {showExerciseModal && (
+                        <ExerciseModal
+                            onClose={() => setShowExerciseModal(false)}
+                            onSave={addExercise}
+                        />
+                    )}
+
+                    {showSeriesModal && (
+                        <SeriesModal
+                            series={session.exercises[currentExerciseIndex]?.series[currentSeriesIndex]}
+                            seriesNumber={currentSeriesIndex + 1}
+                            defaultRest={session.exercises[currentExerciseIndex]?.rest}
+                            onClose={() => setShowSeriesModal(false)}
+                            onSave={saveSeries}
+                        />
+                    )}
+
+                    {showAddTypeModal && (
+                        <div className="modal-overlay" onClick={() => setShowAddTypeModal(false)}>
+                            <div className="modal" onClick={e => e.stopPropagation()}>
+                                <div className="modal-handle"/>
+                                <div className="modal-header">
+                                    <div className="modal-title">Nouveau type</div>
+                                    <button className="modal-close-btn" onClick={() => setShowAddTypeModal(false)}>Annuler</button>
+                                </div>
+                                <div className="modal-body">
+                                    <div className="form-field">
+                                        <label className="field-label">Nom du type</label>
+                                        <input
+                                            autoFocus
+                                            type="text"
+                                            className="field-input"
+                                            placeholder="Ex: Force, Cardio, Mobilité..."
+                                            value={newTypeName}
+                                            onChange={e => setNewTypeName(e.target.value)}
+                                            onKeyDown={e => e.key === 'Enter' && addSessionType()}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="modal-actions">
+                                    <button className="modal-btn modal-btn-primary" onClick={addSessionType}>Ajouter</button>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </>
+            );
+        }
+
+        // Exercise Modal Component
+        function ExerciseModal({ onClose, onSave }) {
+            const [name, setName] = useState('');
+            const [rest, setRest] = useState('');
+            const [isNewExercise, setIsNewExercise] = useState(false);
+            const exerciseNames = Storage.getExerciseNames();
+
+            const handleSave = () => {
+                if (!name || !rest) {
+                    alert('Veuillez remplir tous les champs');
+                    return;
+                }
+                onSave({ name, rest });
+                onClose();
+            };
+
+            return (
+                <div className="modal-overlay" onClick={onClose}>
+                    <div className="modal" onClick={(e) => e.stopPropagation()}>
+                        <div className="modal-handle"></div>
+                        <div className="modal-header">
+                            <div className="modal-title">Nouvel Exercice</div>
+                            <button className="modal-close-btn" onClick={onClose}>Annuler</button>
+                        </div>
+                        
+                        <div className="modal-body">
+                            <div className="form-field">
+                                <label className="field-label">Exercice</label>
+                                {!isNewExercise && exerciseNames.length > 0 ? (
+                                    <>
+                                        <select 
+                                            className="field-select"
+                                            value={name}
+                                            onChange={(e) => setName(e.target.value)}
+                                        >
+                                            <option value="">Sélectionner...</option>
+                                            {exerciseNames.map((exerciseName, i) => (
+                                                <option key={i} value={exerciseName}>{exerciseName}</option>
+                                            ))}
+                                        </select>
+                                        <div 
+                                            className="new-exercise-option"
+                                            onClick={() => setIsNewExercise(true)}
+                                        >
+                                            + Créer un nouvel exercice
+                                        </div>
+                                    </>
+                                ) : (
+                                    <input
+                                        type="text"
+                                        className="field-input"
+                                        placeholder="Nom de l'exercice"
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value)}
+                                    />
+                                )}
+                            </div>
+
+                            <div className="form-field">
+                                <label className="field-label">Temps de repos</label>
+                                <input
+                                    type="text"
+                                    className="field-input"
+                                    placeholder="Ex: 2'30 RTS"
+                                    value={rest}
+                                    onChange={(e) => setRest(e.target.value)}
+                                />
+                            </div>
+                        </div>
+
+                        <div className="modal-actions">
+                            <button className="modal-btn modal-btn-primary" onClick={handleSave}>
+                                Ajouter
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        // Series Modal Component
+        function SeriesModal({ series, seriesNumber, defaultRest, onClose, onSave }) {
+            const [weight, setWeight] = useState(series?.weight || '');
+            const [reps, setReps] = useState(series?.reps || '');
+            const [comment, setComment] = useState(series?.comment || '');
+            const [rest, setRest] = useState(series?.rest || '');
+            const [customRest, setCustomRest] = useState(!!series?.rest);
+
+            const handleSave = () => {
+                if (!weight || !reps) {
+                    alert('Veuillez remplir le poids et les répétitions');
+                    return;
+                }
+                onSave({ 
+                    weight: parseFloat(weight), 
+                    reps: parseInt(reps), 
+                    comment,
+                    rest: customRest && rest.trim() ? rest.trim() : null
+                });
+                onClose();
+            };
+
+            return (
+                <div className="modal-overlay" onClick={onClose}>
+                    <div className="modal" onClick={(e) => e.stopPropagation()}>
+                        <div className="modal-handle"></div>
+                        <div className="modal-header">
+                            <div className="modal-title">Série {seriesNumber}</div>
+                            <button className="modal-close-btn" onClick={onClose}>Annuler</button>
+                        </div>
+                        
+                        <div className="modal-body">
+                            <div className="form-field">
+                                <label className="field-label">Poids (kg)</label>
+                                <input
+                                    type="number"
+                                    step="0.5"
+                                    className="field-input"
+                                    placeholder="90"
+                                    value={weight}
+                                    onChange={(e) => setWeight(e.target.value)}
+                                />
+                            </div>
+
+                            <div className="form-field">
+                                <label className="field-label">Répétitions</label>
+                                <input
+                                    type="number"
+                                    className="field-input"
+                                    placeholder="10"
+                                    value={reps}
+                                    onChange={(e) => setReps(e.target.value)}
+                                />
+                            </div>
+
+                            {/* RIS Section */}
+                            <div className="form-field">
+                                <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px'}}>
+                                    <label className="field-label" style={{marginBottom: 0}}>Repos inter-série</label>
+                                    <button
+                                        onClick={() => { setCustomRest(c => !c); if (customRest) setRest(''); }}
+                                        style={{
+                                            background: customRest ? 'rgba(255,61,61,0.15)' : 'var(--bg-tertiary)',
+                                            border: 'none',
+                                            borderRadius: '20px',
+                                            padding: '4px 12px',
+                                            fontSize: '12px',
+                                            fontWeight: '700',
+                                            color: customRest ? 'var(--accent)' : 'var(--text-secondary)',
+                                            cursor: 'pointer',
+                                            textTransform: 'uppercase',
+                                            letterSpacing: '0.5px'
+                                        }}
+                                    >
+                                        {customRest ? 'Personnalisé' : 'Par défaut'}
+                                    </button>
+                                </div>
+                                {customRest ? (
+                                    <input
+                                        autoFocus
+                                        type="text"
+                                        className="field-input"
+                                        placeholder={`Défaut : ${defaultRest || 'non défini'}`}
+                                        value={rest}
+                                        onChange={(e) => setRest(e.target.value)}
+                                    />
+                                ) : (
+                                    <div style={{
+                                        padding: '14px',
+                                        background: 'var(--bg-tertiary)',
+                                        borderRadius: '12px',
+                                        fontSize: '15px',
+                                        color: 'var(--text-secondary)'
+                                    }}>
+                                        {defaultRest || 'Non défini'} (défaut exercice)
+                                    </div>
+                                )}
+                            </div>
+
+                            <div className="form-field">
+                                <label className="field-label">Commentaire (optionnel)</label>
+                                <textarea
+                                    className="comment-input"
+                                    style={{minHeight: '70px'}}
+                                    placeholder="Notes sur cette série..."
+                                    value={comment}
+                                    onChange={(e) => setComment(e.target.value)}
+                                />
+                            </div>
+                        </div>
+
+                        <div className="modal-actions">
+                            <button className="modal-btn modal-btn-primary" onClick={handleSave}>
+                                Valider
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        // History Page Component
+        function HistoryPage({ workouts, selectedDate, currentMonth, onDateSelect, onMonthChange, onWorkoutSelect, onBack, onAddPastWorkout }) {
+            const [showAddModal, setShowAddModal] = useState(false);
+            const [newWorkoutDate, setNewWorkoutDate] = useState('');
+            
+            const monthNames = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 
+                              'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+            const weekDays = ['lun', 'mar', 'mer', 'jeu', 'ven', 'sam', 'dim'];
+            const sessionTypes = Storage.getSessionTypes();
+            
+            const handleAddWorkout = () => {
+                if (!newWorkoutDate) {
+                    alert('Veuillez sélectionner une date');
+                    return;
+                }
+                const date = new Date(newWorkoutDate + 'T12:00:00');
+                setShowAddModal(false);
+                setNewWorkoutDate('');
+                onAddPastWorkout(date);
+            };
+
+            const getCalendarDays = () => {
+                const year = currentMonth.getFullYear();
+                const month = currentMonth.getMonth();
+                const firstDay = new Date(year, month, 1);
+                const lastDay = new Date(year, month + 1, 0);
+                
+                let startDay = firstDay.getDay();
+                startDay = startDay === 0 ? 6 : startDay - 1;
+                
+                const days = [];
+                
+                const prevMonthLastDay = new Date(year, month, 0).getDate();
+                for (let i = startDay - 1; i >= 0; i--) {
+                    days.push({
+                        date: new Date(year, month - 1, prevMonthLastDay - i),
+                        isCurrentMonth: false
+                    });
+                }
+                
+                for (let i = 1; i <= lastDay.getDate(); i++) {
+                    days.push({
+                        date: new Date(year, month, i),
+                        isCurrentMonth: true
+                    });
+                }
+                
+                const remainingDays = 42 - days.length;
+                for (let i = 1; i <= remainingDays; i++) {
+                    days.push({
+                        date: new Date(year, month + 1, i),
+                        isCurrentMonth: false
+                    });
+                }
+                
+                return days;
+            };
+
+            const getWorkoutForDate = (date) => {
+                return workouts.find(w => {
+                    const workoutDate = new Date(w.date);
+                    return isSameDay(workoutDate, date);
+                });
+            };
+
+            const previousMonth = () => {
+                onMonthChange(new Date(currentMonth.getFullYear(), currentMonth.getMonth() - 1));
+            };
+
+            const nextMonth = () => {
+                onMonthChange(new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1));
+            };
+
+            const calendarDays = getCalendarDays();
+            const selectedWorkout = getWorkoutForDate(selectedDate);
+
+            return (
+                <>
+                    <div className="nav-bar">
+                        <div className="nav-content">
+                            <button className="nav-back" onClick={onBack}>
+                                Menu
+                            </button>
+                            <div className="nav-title">Historique</div>
+                            <button 
+                                className="nav-back" 
+                                onClick={() => setShowAddModal(true)}
+                                style={{fontSize: '24px', fontWeight: '300'}}
+                            >
+                                +
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="calendar-section">
+                        <div className="calendar-header">
+                            <button className="month-nav-btn" onClick={previousMonth}>‹</button>
+                            <div className="calendar-month-title">
+                                {monthNames[currentMonth.getMonth()]} {currentMonth.getFullYear()}
+                            </div>
+                            <button className="month-nav-btn" onClick={nextMonth}>›</button>
+                        </div>
+
+                        <div className="calendar-weekdays">
+                            {weekDays.map((day, i) => (
+                                <div key={i} className="weekday-label">{day}</div>
+                            ))}
+                        </div>
+                        
+                        <div className="calendar-grid">
+                            {calendarDays.map((day, i) => {
+                                const workout = getWorkoutForDate(day.date);
+                                const isToday = isSameDay(day.date, new Date());
+                                const sessionType = workout ? resolveSessionType(workout.type) : null;
+                                
+                                return (
+                                    <div
+                                        key={i}
+                                        className={`calendar-day 
+                                            ${!day.isCurrentMonth ? 'other-month' : ''} 
+                                            ${isToday ? 'today' : ''}
+                                            ${workout ? 'has-workout' : ''}
+                                        `}
+                                        style={workout ? {'--dot-color': sessionType.color} : {}}
+                                        onClick={() => onDateSelect(day.date)}
+                                    >
+                                        {day.date.getDate()}
+                                        {workout && (
+                                            <span className="calendar-dot" style={{background: sessionType.color}}/>
+                                        )}
+                                    </div>
+                                );
+                            })}
+                        </div>
+
+                        <div className="selected-date-card">
+                            <div className="selected-date-title">{formatDate(selectedDate)}</div>
+                            {selectedWorkout ? (() => {
+                                const st = resolveSessionType(selectedWorkout.type);
+                                return (
+                                    <div className="workout-preview" onClick={() => onWorkoutSelect(selectedWorkout)}>
+                                        <div className="workout-badge" style={{background: `${st.color}22`, color: st.color, borderColor: `${st.color}44`, fontSize: sessionTypeFontSize(st.name)}}>
+                                            {st.name}
+                                        </div>
+                                        <div className="workout-summary">
+                                            {selectedWorkout.exercises.length} exercice{selectedWorkout.exercises.length > 1 ? 's' : ''}
+                                        </div>
+                                    </div>
+                                );
+                            })() : (
+                                <div className="no-workout-msg">Aucun événement</div>
+                            )}
+                        </div>
+                    </div>
+                    
+                    {/* Add Past Workout Modal */}
+                    {showAddModal && (
+                        <div className="modal-overlay" onClick={() => setShowAddModal(false)}>
+                            <div className="modal" onClick={(e) => e.stopPropagation()}>
+                                <div className="modal-header">
+                                    <h2>Ajouter une séance</h2>
+                                    <button className="modal-close" onClick={() => setShowAddModal(false)}>×</button>
+                                </div>
+                                <div className="modal-content">
+                                    <div className="field-group">
+                                        <div className="field-label">Date de la séance</div>
+                                        <input
+                                            type="date"
+                                            className="field-input"
+                                            value={newWorkoutDate}
+                                            onChange={(e) => setNewWorkoutDate(e.target.value)}
+                                            max={new Date().toISOString().split('T')[0]}
+                                        />
+                                    </div>
+                                </div>
+                                <div className="modal-actions">
+                                    <button className="modal-btn modal-btn-primary" onClick={handleAddWorkout}>
+                                        Créer la séance
+                                    </button>
+                                    <button className="modal-btn modal-btn-secondary" onClick={() => setShowAddModal(false)}>
+                                        Annuler
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </>
+            );
+        }
+
+        // Workout Detail Page Component
+        function WorkoutDetailPage({ workout, workouts, setWorkouts, onBack }) {
+            const [isEditing, setIsEditing] = useState(false);
+            const [editedWorkout, setEditedWorkout] = useState(workout);
+            const [showExerciseModal, setShowExerciseModal] = useState(false);
+            const [showSeriesModal, setShowSeriesModal] = useState(false);
+            const [currentExerciseIndex, setCurrentExerciseIndex] = useState(null);
+            const [currentSeriesIndex, setCurrentSeriesIndex] = useState(null);
+
+            const saveChanges = () => {
+                const allWorkouts = Storage.getWorkouts();
+                const workoutIndex = allWorkouts.findIndex(w => 
+                    new Date(w.date).getTime() === new Date(workout.date).getTime() &&
+                    w.type === workout.type
+                );
+                
+                if (workoutIndex !== -1) {
+                    allWorkouts[workoutIndex] = editedWorkout;
+                    Storage.saveWorkouts(allWorkouts);
+                    setWorkouts(allWorkouts);
+                    alert('Modifications enregistrées !');
+                    setIsEditing(false);
+                }
+            };
+
+            const deleteWorkout = () => {
+                if (confirm('Voulez-vous vraiment supprimer cette séance ?')) {
+                    const allWorkouts = Storage.getWorkouts();
+                    const filteredWorkouts = allWorkouts.filter(w => 
+                        !(new Date(w.date).getTime() === new Date(workout.date).getTime() &&
+                          w.type === workout.type)
+                    );
+                    Storage.saveWorkouts(filteredWorkouts);
+                    setWorkouts(filteredWorkouts);
+                    alert('Séance supprimée !');
+                    onBack();
+                }
+            };
+
+            const addExercise = (exercise) => {
+                const romanNumerals = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
+                const newExercise = {
+                    number: romanNumerals[editedWorkout.exercises.length] || (editedWorkout.exercises.length + 1),
+                    ...exercise,
+                    series: []
+                };
+                setEditedWorkout({
+                    ...editedWorkout,
+                    exercises: [...editedWorkout.exercises, newExercise]
+                });
+                Storage.addExerciseName(exercise.name);
+            };
+
+            const deleteExercise = (index) => {
+                const newExercises = editedWorkout.exercises.filter((_, i) => i !== index);
+                setEditedWorkout({ ...editedWorkout, exercises: newExercises });
+            };
+
+            const addSeries = (exerciseIndex) => {
+                setCurrentExerciseIndex(exerciseIndex);
+                setCurrentSeriesIndex(editedWorkout.exercises[exerciseIndex].series.length);
+                setShowSeriesModal(true);
+            };
+
+            const saveSeries = (seriesData) => {
+                const newExercises = [...editedWorkout.exercises];
+                if (currentSeriesIndex === newExercises[currentExerciseIndex].series.length) {
+                    newExercises[currentExerciseIndex].series.push(seriesData);
+                } else {
+                    newExercises[currentExerciseIndex].series[currentSeriesIndex] = seriesData;
+                }
+                setEditedWorkout({ ...editedWorkout, exercises: newExercises });
+            };
+
+            const editSeries = (exerciseIndex, seriesIndex) => {
+                setCurrentExerciseIndex(exerciseIndex);
+                setCurrentSeriesIndex(seriesIndex);
+                setShowSeriesModal(true);
+            };
+
+            const deleteSeries = (exerciseIndex, seriesIndex) => {
+                if (confirm('Supprimer cette série ?')) {
+                    const newExercises = [...editedWorkout.exercises];
+                    newExercises[exerciseIndex].series = newExercises[exerciseIndex].series.filter((_, i) => i !== seriesIndex);
+                    setEditedWorkout({ ...editedWorkout, exercises: newExercises });
+                }
+            };
+
+            const st = resolveSessionType(editedWorkout.type);
+
+            return (
+                <>
+                    <div className="nav-bar">
+                        <div className="nav-content">
+                            <button className="nav-back" onClick={onBack}>
+                                Retour
+                            </button>
+                            <div className="nav-title">Séance</div>
+                            <div className="nav-actions">
+                                {!isEditing ? (
+                                    <>
+                                        <button className="nav-icon-btn" onClick={deleteWorkout}>🗑️</button>
+                                        <button className="nav-icon-btn" onClick={() => setIsEditing(true)}>✏️</button>
+                                    </>
+                                ) : (
+                                    <button className="nav-button" onClick={() => setIsEditing(false)}>Annuler</button>
+                                )}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="workout-detail">
+                        <div className="workout-detail-header">
+                            <div className="workout-badge" style={{background: `${st.color}22`, color: st.color, borderColor: `${st.color}44`, fontSize: sessionTypeFontSize(st.name)}}>
+                                {st.name}
+                            </div>
+                        </div>
+
+                        {isEditing ? (
+                            <>
+                                {editedWorkout.exercises.map((exercise, exerciseIndex) => (
+                                    <div key={exerciseIndex} className="exercise-card">
+                                        <div className="exercise-card-header">
+                                            <div className="exercise-info">
+                                                <div className="exercise-number">{exercise.number}</div>
+                                                <div className="exercise-name">{exercise.name}</div>
+                                                <div className="exercise-rest">{exercise.rest}</div>
+                                            </div>
+                                            <button 
+                                                className="delete-btn"
+                                                onClick={() => deleteExercise(exerciseIndex)}
+                                            >
+                                                ×
+                                            </button>
+                                        </div>
+                                        <div className="series-container">
+                                            {exercise.series.map((series, seriesIndex) => (
+                                                <div 
+                                                    key={seriesIndex} 
+                                                    className="series-card completed"
+                                                    style={{position: 'relative'}}
+                                                >
+                                                    <button
+                                                        onClick={(e) => {
+                                                            e.stopPropagation();
+                                                            deleteSeries(exerciseIndex, seriesIndex);
+                                                        }}
+                                                        className="delete-btn"
+                                                        style={{position: 'absolute', top: '8px', right: '8px'}}
+                                                    >
+                                                        ×
+                                                    </button>
+                                                    <div onClick={() => editSeries(exerciseIndex, seriesIndex)}>
+                                                        <div className="series-header">Série {seriesIndex + 1}</div>
+                                                        <div className="series-data">
+                                                            {series.weight}kg × {series.reps} reps
+                                                        </div>
+                                                        {series.rest && (
+                                                            <div style={{
+                                                                fontSize: '12px',
+                                                                color: 'var(--accent)',
+                                                                marginTop: '4px',
+                                                                fontWeight: '600'
+                                                            }}>
+                                                                ⏱ RIS : {series.rest}
+                                                            </div>
+                                                        )}
+                                                        {series.comment && (
+                                                            <div className="series-comment">{series.comment}</div>
+                                                        )}
+                                                    </div>
+                                                    <div className="series-indicators">
+                                                        <button
+                                                            className={`indicator-btn ${series.indicator === 'up' ? 'active' : ''}`}
+                                                            onClick={(e) => {
+                                                                e.stopPropagation();
+                                                                const newExercises = [...editedWorkout.exercises];
+                                                                newExercises[exerciseIndex].series[seriesIndex].indicator = 
+                                                                    series.indicator === 'up' ? null : 'up';
+                                                                setEditedWorkout({ ...editedWorkout, exercises: newExercises });
+                                                            }}
+                                                        >
+                                                            ↗
+                                                        </button>
+                                                        <button
+                                                            className={`indicator-btn ${series.indicator === 'same' ? 'active' : ''}`}
+                                                            onClick={(e) => {
+                                                                e.stopPropagation();
+                                                                const newExercises = [...editedWorkout.exercises];
+                                                                newExercises[exerciseIndex].series[seriesIndex].indicator = 
+                                                                    series.indicator === 'same' ? null : 'same';
+                                                                setEditedWorkout({ ...editedWorkout, exercises: newExercises });
+                                                            }}
+                                                        >
+                                                            →
+                                                        </button>
+                                                        <button
+                                                            className={`indicator-btn ${series.indicator === 'down' ? 'active' : ''}`}
+                                                            onClick={(e) => {
+                                                                e.stopPropagation();
+                                                                const newExercises = [...editedWorkout.exercises];
+                                                                newExercises[exerciseIndex].series[seriesIndex].indicator = 
+                                                                    series.indicator === 'down' ? null : 'down';
+                                                                setEditedWorkout({ ...editedWorkout, exercises: newExercises });
+                                                            }}
+                                                        >
+                                                            ↘
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            ))}
+                                            <button 
+                                                className="add-series-btn"
+                                                onClick={() => addSeries(exerciseIndex)}
+                                            >
+                                                + Ajouter série
+                                            </button>
+                                        </div>
+                                    </div>
+                                ))}
+
+                                <button 
+                                    className="add-exercise-btn" 
+                                    onClick={() => setShowExerciseModal(true)}
+                                >
+                                    + Ajouter exercice
+                                </button>
+
+                                <div className="comment-section">
+                                    <div className="comment-label">Commentaire séance</div>
+                                    <textarea
+                                        className="comment-input"
+                                        placeholder="Notes générales sur la séance..."
+                                        value={editedWorkout.comment}
+                                        onChange={(e) => setEditedWorkout({ ...editedWorkout, comment: e.target.value })}
+                                    />
+                                </div>
+
+                                <div className="bottom-action-btn">
+                                    <button className="action-btn" onClick={saveChanges}>
+                                        Enregistrer les modifications
+                                    </button>
+                                </div>
+                            </>
+                        ) : (
+                            <>
+                                {editedWorkout.exercises.map((exercise, exerciseIndex) => (
+                                    <div key={exerciseIndex} className="exercise-detail-card">
+                                        <div className="exercise-number">{exercise.number}</div>
+                                        <div className="exercise-name">{exercise.name}</div>
+                                        <div className="exercise-rest" style={{marginBottom: '12px'}}>{exercise.rest}</div>
+                                        
+                                        {exercise.series.map((series, seriesIndex) => (
+                                            <div key={seriesIndex} className="series-detail-item">
+                                                <div className="series-detail-data">
+                                                    Série {seriesIndex + 1}: {series.weight}kg × {series.reps} reps
+                                                </div>
+                                                {series.comment && (
+                                                    <div className="series-comment">{series.comment}</div>
+                                                )}
+                                            </div>
+                                        ))}
+                                    </div>
+                                ))}
+
+                                {editedWorkout.comment && (
+                                    <div className="exercise-detail-card">
+                                        <div className="comment-label">Commentaire séance</div>
+                                        <div style={{marginTop: '8px', color: 'var(--text-secondary)'}}>
+                                            {editedWorkout.comment}
+                                        </div>
+                                    </div>
+                                )}
+                            </>
+                        )}
+                    </div>
+
+                    {isEditing && showExerciseModal && (
+                        <ExerciseModal
+                            onClose={() => setShowExerciseModal(false)}
+                            onSave={addExercise}
+                        />
+                    )}
+
+                    {isEditing && showSeriesModal && (
+                        <SeriesModal
+                            series={editedWorkout.exercises[currentExerciseIndex]?.series[currentSeriesIndex]}
+                            seriesNumber={currentSeriesIndex + 1}
+                            onClose={() => setShowSeriesModal(false)}
+                            onSave={saveSeries}
+                        />
+                    )}
+                </>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('app'));
+    </script>
+
+    <!-- Service Worker Registration -->
+    <script>
+        // Register Service Worker for offline functionality
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                // Inline Service Worker
+                const swCode = `
+                    const CACHE_NAME = 'carnet-sport-v1';
+                    const urlsToCache = ['/'];
+
+                    self.addEventListener('install', (event) => {
+                        event.waitUntil(
+                            caches.open(CACHE_NAME)
+                                .then((cache) => cache.addAll(urlsToCache))
+                        );
+                        self.skipWaiting();
+                    });
+
+                    self.addEventListener('fetch', (event) => {
+                        event.respondWith(
+                            caches.match(event.request)
+                                .then((response) => response || fetch(event.request))
+                        );
+                    });
+
+                    self.addEventListener('activate', (event) => {
+                        event.waitUntil(
+                            caches.keys().then((cacheNames) => {
+                                return Promise.all(
+                                    cacheNames.map((cacheName) => {
+                                        if (cacheName !== CACHE_NAME) {
+                                            return caches.delete(cacheName);
+                                        }
+                                    })
+                                );
+                            })
+                        );
+                    });
+                `;
+
+                // Create blob URL for service worker
+                const blob = new Blob([swCode], { type: 'application/javascript' });
+                const swUrl = URL.createObjectURL(blob);
+
+                navigator.serviceWorker.register(swUrl)
+                    .then((registration) => {
+                        console.log('✅ Service Worker registered:', registration.scope);
+                    })
+                    .catch((error) => {
+                        console.log('❌ Service Worker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+
+    <!-- PWA Install Prompt (optional) -->
+    <script>
+        let deferredPrompt;
+        
+        window.addEventListener('beforeinstallprompt', (e) => {
+            // Prevent the mini-infobar from appearing on mobile
+            e.preventDefault();
+            // Stash the event so it can be triggered later
+            deferredPrompt = e;
+            console.log('💾 PWA installable');
+        });
+
+        window.addEventListener('appinstalled', () => {
+            console.log('✅ PWA installed successfully!');
+            deferredPrompt = null;
+        });
+    </script>
+</body>
+</html>
